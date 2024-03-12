@@ -1,0 +1,1906 @@
+Program.Sub.ScreenSU.Start
+Gui.f_Main..Create
+Gui.f_Main..Caption("Create New Batch")
+Gui.f_Main..Size(15000,10695)
+Gui.f_Main..MinX(0)
+Gui.f_Main..MinY(0)
+Gui.f_Main..Position(0,0)
+Gui.f_Main..BackColor(-2147483633)
+Gui.f_Main..MousePointer(0)
+Gui.f_Main..Event(UnLoad,f_Main_UnLoad)
+Gui.f_Main.GsGcMain.Create(GsGridControl)
+Gui.f_Main.GsGcMain.Size(14610,7950)
+Gui.f_Main.GsGcMain.Position(90,1980)
+Gui.f_Main.GsGcMain.Anchor(15)
+Gui.f_Main.GsGcMain.Event(RowCellClick,GsGcMain_RowCellClick)
+Gui.f_Main.GsGcMain.Event(CellValueChanged,GsGcMain_CellValueChanged)
+Gui.f_Main.picGSSLogo.Create(PictureBox)
+Gui.f_Main.picGSSLogo.Size(4125,960)
+Gui.f_Main.picGSSLogo.Position(5340,180)
+Gui.f_Main.picGSSLogo.Anchor(1)
+Gui.f_Main.frmPost.Create(Frame)
+Gui.f_Main.frmPost.Size(1365,1815)
+Gui.f_Main.frmPost.Position(13335,60)
+Gui.f_Main.frmPost.Anchor(9)
+Gui.f_Main.cmdHeian.Create(Button)
+Gui.f_Main.cmdHeian.Size(1140,375)
+Gui.f_Main.cmdHeian.Position(105,150)
+Gui.f_Main.cmdHeian.Parent("frmPost")
+Gui.f_Main.cmdHeian.Caption("Heian")
+Gui.f_Main.cmdHeian.Event(Click,cmdHeian_Click)
+Gui.f_Main.cmdHomag.Create(Button)
+Gui.f_Main.cmdHomag.Size(1140,375)
+Gui.f_Main.cmdHomag.Position(105,555)
+Gui.f_Main.cmdHomag.Parent("frmPost")
+Gui.f_Main.cmdHomag.Caption("Homag")
+Gui.f_Main.cmdHomag.Event(Click,cmdHomag_Click)
+Gui.f_Main.cmd5Pc.Create(Button)
+Gui.f_Main.cmd5Pc.Size(1140,375)
+Gui.f_Main.cmd5Pc.Position(105,960)
+Gui.f_Main.cmd5Pc.Parent("frmPost")
+Gui.f_Main.cmd5Pc.Caption("5 Piece")
+Gui.f_Main.cmd5Pc.Event(Click,cmd5Pc_Click)
+Gui.f_Main.cmdArtisan.Create(Button)
+Gui.f_Main.cmdArtisan.Size(1140,375)
+Gui.f_Main.cmdArtisan.Position(105,1365)
+Gui.f_Main.cmdArtisan.Parent("frmPost")
+Gui.f_Main.cmdArtisan.Caption("Artisan")
+Gui.f_Main.cmdArtisan.DefaultValue("")
+Gui.f_Main.cmdArtisan.Event(Click,cmdArtisan_Click)
+Gui.f_Main.frmSetup.Create(Frame)
+Gui.f_Main.frmSetup.Size(1365,1815)
+Gui.f_Main.frmSetup.Position(11865,60)
+Gui.f_Main.frmSetup.Anchor(9)
+Gui.f_Main.cmdSetup.Create(Button)
+Gui.f_Main.cmdSetup.Size(1140,375)
+Gui.f_Main.cmdSetup.Position(105,750)
+Gui.f_Main.cmdSetup.Parent("frmSetup")
+Gui.f_Main.cmdSetup.Caption("Setup")
+Gui.f_Main.cmdSetup.Event(Click,cmdSetup_Click)
+Gui.f_Setup..Create
+Gui.f_Setup..Caption("Setup")
+Gui.f_Setup..Size(5850,5565)
+Gui.f_Setup..MinX(0)
+Gui.f_Setup..MinY(0)
+Gui.f_Setup..Position(0,0)
+Gui.f_Setup..AlwaysOnTop(True)
+Gui.f_Setup..BackColor(-2147483633)
+Gui.f_Setup..MaxButton(False)
+Gui.f_Setup..MinButton(False)
+Gui.f_Setup..MousePointer(0)
+Gui.f_Setup..Sizeable(False)
+Gui.f_Setup..Event(UnLoad,f_Setup_UnLoad)
+Gui.f_Setup.cmdSave.Create(Button)
+Gui.f_Setup.cmdSave.Size(1110,375)
+Gui.f_Setup.cmdSave.Position(4425,4650)
+Gui.f_Setup.cmdSave.Caption("Save")
+Gui.f_Setup.cmdSave.Event(Click,cmdSave_Click)
+Gui.f_Setup.tabSetup.Create(Tab)
+Gui.f_Setup.tabSetup.Size(5535,4515)
+Gui.f_Setup.tabSetup.Position(45,90)
+Gui.f_Setup.tabSetup.Tabs(2)
+Gui.f_Setup.tabSetup.SetTab(0)
+Gui.f_Setup.tabSetup.Caption("Conflicts")
+Gui.f_Setup.tabSetup.SetTab(1)
+Gui.f_Setup.tabSetup.Caption("Highlight SCode")
+Gui.f_Setup.GsGcConflict.Create(GsGridControl)
+Gui.f_Setup.GsGcConflict.Size(5340,4050)
+Gui.f_Setup.GsGcConflict.Position(45,45)
+Gui.f_Setup.GsGcConflict.Parent("tabSetup",0)
+Gui.f_Setup.GsGcHighlight.Create(GsGridControl)
+Gui.f_Setup.GsGcHighlight.Size(5340,4050)
+Gui.f_Setup.GsGcHighlight.Position(45,45)
+Gui.f_Setup.GsGcHighlight.Parent("tabSetup",1)
+Gui.f_WC..Create
+Gui.f_WC..Caption("Workcenter Selection")
+Gui.f_WC..Size(6690,1995)
+Gui.f_WC..MinX(0)
+Gui.f_WC..MinY(0)
+Gui.f_WC..Position(0,0)
+Gui.f_WC..AlwaysOnTop(True)
+Gui.f_WC..BackColor(-2147483633)
+Gui.f_WC..ControlBox(False)
+Gui.f_WC..MaxButton(False)
+Gui.f_WC..MinButton(False)
+Gui.f_WC..MousePointer(0)
+Gui.f_WC..Sizeable(False)
+Gui.f_WC..Event(UnLoad,f_WC_UnLoad)
+Gui.f_WC.lblWCSelection.Create(Label,"Please Select The Workcenter Where This Schedule Will Run",True,5775,615,0,345,300,True,2,"Arial",12,-2147483633,0)
+Gui.f_WC.lblWCSelection.FontStyle(True,False,False,False,False)
+Gui.f_WC.ddlWCSelection.Create(DropDownList)
+Gui.f_WC.ddlWCSelection.Size(1950,330)
+Gui.f_WC.ddlWCSelection.Position(2295,915)
+Gui.f_WC.cmdProcess.Create(Button)
+Gui.f_WC.cmdProcess.Size(1200,330)
+Gui.f_WC.cmdProcess.Position(4680,915)
+Gui.f_WC.cmdProcess.Caption("Process")
+Gui.f_WC.cmdProcess.Event(Click,cmdProcess_Click)
+Program.Sub.ScreenSU.End
+
+Variable.Global.sMatl.Declare(String)
+Variable.Global.iSelected.Declare(Long,0)
+Variable.Global.s5PC.Declare(String)
+Variable.Global.sAny.Declare(String)
+Variable.Global.sArt.Declare(String)
+Variable.Global.sHeian.Declare(String)
+Variable.Global.sHomag.Declare(String)
+Variable.Global.sSchedule.Declare(String)
+Variable.Global.bSelected.Declare(Boolean,False)
+Variable.Global.sScheduleSuffix.Declare(String)
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+V.Local.sGssLogo.Declare
+V.Local.sIcon.Declare
+
+F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+
+	F.Intrinsic.Control.CaseElse
+		F.Intrinsic.String.Build("{0}\ART\gss2.ico",V.Caller.GlobalDir,V.Local.sIcon)
+		F.Intrinsic.String.Build("{0}\ART\GAB_GSS_Logo_Green_Dash.png",V.Caller.GlobalDir,V.Local.sGssLogo)
+
+		GUI.f_Main..Icon(V.Local.sIcon)
+		GUI.f_Main.picGSSLogo.Picture(V.Local.sGssLogo)
+		Gui.f_Setup..Icon(V.Local.sIcon)
+		Gui.f_WC..Icon(V.Local.sIcon)
+		F.Intrinsic.UI.InvokeWaitDialog("Loading Data","Cut Rite Integration")
+		F.Intrinsic.Control.CallSub(connect)
+		F.Intrinsic.UI.ChangeWaitStatus("Loading Options")
+		F.Intrinsic.Control.CallSub(loadoptions)
+		F.Intrinsic.UI.ChangeWaitStatus("Loading Main Data Table")
+		F.Intrinsic.Control.CallSub(loaddtmain)
+		F.Intrinsic.UI.ChangeWaitStatus("Loading Grid View")
+		F.Intrinsic.Control.CallSub(loadgvmain)
+F.Intrinsic.Control.EndSelect
+
+Program.Sub.Main.End
+
+Program.Sub.LoadDtMain.Start
+V.Local.bBatched.Declare
+V.Local.bExport.Declare
+V.Local.fHeight.Declare
+V.Local.fWidth.Declare
+V.Local.iFor.Declare
+V.Local.sBCode.Declare
+V.Local.sDT.Declare
+V.Local.sFinish.Declare
+V.Local.sGCode.Declare
+V.Local.sHighlight.Declare
+V.Local.sLine.Declare
+V.Local.sMatl.Declare
+V.Local.sMatlDesc.Declare
+V.Local.sNCode.Declare
+V.Local.sNotes.Declare
+V.Local.sPartCode.Declare
+V.Local.sSCode.Declare
+V.Local.sSQL.Declare
+V.Local.sUser34.Declare
+V.Local.sUser35.Declare
+
+V.Local.sDT.Set("dtMain")
+V.Local.sSQL.Set("select (SELECT CASE WHEN ISNULL(D.BATCHED,'0')='0' THEN '0' ELSE D.BATCHED END) AS 'BATCH_CHECK', C.ORDER_NO, C.ORDER_LINE, A.JOB, A.SUFFIX, A.SEQ, B.PART, B.PRIORITY, B.DATE_DUE, B.QTY_ORDER, A.WORKCENTER, B.CUSTOMER from V_JOB_OPERATIONS_WC A left outer join V_JOB_HEADER B on A.JOB = B.JOB and A.SUFFIX = B.SUFFIX left outer join V_ORDER_TO_WO C on A.JOB = C.JOB and A.SUFFIX = C.SUFFIX left outer join GAB_4594_BATCH D on A.JOB = D.JOB and A.SUFFIX = D.SUFFIX and A.SEQ = D.SEQ where A.LMO = 'L' and A.OPERATION = 'MACH' and A.WORKCENTER <> '' and A.FLAG_CLOSED <> 'Y' and BATCH_CHECK = '0' order by A.JOB, A.SUFFIX, A.SEQ")
+
+F.Intrinsic.Control.If(V.DataTable.dtMain.Exists,=,True)
+	F.Data.DataTable.DeleteRow(V.Local.sDT)
+	F.Data.DataTable.Close(V.Local.sDT)
+F.Intrinsic.Control.EndIf
+
+F.Data.DataTable.CreateFromSQL(V.Local.sDT,"con",V.Local.sSQL,True)
+
+F.Data.DataTable.AddColumn(V.Local.sDT,"MATL","STRING")
+F.Data.DataTable.AddColumn(V.Local.sDT,"MATL_DESC","STRING")
+F.Data.DataTable.AddColumn(V.Local.sDT,"WC_DESC","STRING")
+F.Data.DataTable.AddColumn(V.Local.sDT,"HIGH_SC","STRING")
+F.Data.DataTable.AddColumn(V.Local.sDT,"MOP","STRING")
+F.Data.DataTable.AddColumn(V.Local.sDT,"LOP","STRING")
+F.Data.DataTable.AddColumn(V.Local.sDT,"NAME_CUSTOMER","STRING")
+F.Data.DataTable.AddColumn(V.Local.sDT,"BATCH_NOTES","STRING")
+F.Data.DataTable.AddColumn(V.Local.sDT,"FINISH","STRING")
+F.Data.DataTable.AddColumn(V.Local.sDT,"HEIGHT","FLOAT")
+F.Data.DataTable.AddColumn(V.Local.sDT,"WIDTH","FLOAT")
+F.Data.DataTable.AddColumn(V.Local.sDT,"PART_CODE","STRING")
+F.Data.DataTable.AddColumn(V.Local.sDT,"B_CODE","STRING")
+F.Data.DataTable.AddColumn(V.Local.sDT,"G_CODE","STRING")
+F.Data.DataTable.AddColumn(V.Local.sDT,"N_CODE","STRING")
+F.Data.DataTable.AddColumn(V.Local.sDT,"S_CODE","STRING")
+
+V.Local.sHighlight.Redim(0,1)
+
+'FILL MATL, MATL_DESC, FINISH, HEIGHT, WIDTH, HIGH_SC, MOP, LOP, B CODE, G CODE, N CODE, S CODE, BATCH_NOTES, AND BATCHED WITH A LOOP
+F.Intrinsic.Control.For(V.Local.iFor,V.DataTable.dtMAIN.ROWCOUNT--,0,-1)
+	F.Intrinsic.UI.ChangeWaitStatus("Adding extended data",V.Local.iFor,V.DataTable.dtMain.RowCount--,0)
+	V.Local.sHighlight.Set("")
+	F.Intrinsic.String.Left(V.DataTable.dtMain(V.Local.iFor).ORDER_LINE!FieldValTrim,3,V.Local.sLine)
+	F.Intrinsic.String.Build("select A.MATL, A.FINISH, A.LENGTH, A.WIDTH, A.PART_CODE, A.EXPORT, B.DESCRIPTION, C.USER34, C.USER35, C.USER36, C.USER37, C.USER38 from GAB_4483_OE_LINES A left outer join V_INVENTORY_ALL B on A.MATL = B.PART left outer join INV_EXTRA C on A.PART_CODE = C.PART where A.ORDER_NO = '{0}' and A.LINE = '{1}'",V.DataTable.dtMAIN(V.Local.iFor).ORDER_NO!FieldValTrim,V.Local.sLine,V.Local.sSQL)
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rstSel",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.con!rstSel.EOF,=,False)
+		V.Local.bExport.Set(V.ODBC.con!rstSel.FieldVal!EXPORT)
+		V.Local.sMatl.Set(V.ODBC.con!rstSel.FieldValTrim!MATL)
+		V.Local.sFinish.Set(V.ODBC.con!rstSel.FieldValTrim!FINISH)
+		V.Local.fHeight.Set(V.ODBC.con!rstSel.FieldValFloat!LENGTH)
+		V.Local.fWidth.Set(V.ODBC.con!rstSel.FieldValFloat!WIDTH)
+		V.Local.sPartCode.Set(V.ODBC.con!rstSel.FieldValTrim!PART_CODE)
+		V.Local.sMatlDesc.Set(V.ODBC.con!rstSel.FieldValTrim!DESCRIPTION)
+		V.Local.sUser34.Set(V.ODBC.con!rstSel.FieldValTrim!USER34)
+		V.Local.sUser35.Set(V.ODBC.con!rstSel.FieldValTrim!USER35)
+		V.Local.sSCode.Set(V.ODBC.con!rstSel.FieldValTrim!USER34)
+		V.Local.sBCode.Set(V.ODBC.con!rstSel.FieldValTrim!USER36)
+		V.Local.sNCode.Set(V.ODBC.con!rstSel.FieldValTrim!USER37)
+		V.Local.sGCode.Set(V.ODBC.con!rstSel.FieldValTrim!USER38)
+		F.Intrinsic.String.Build("select * from GAB_4594_HIGHLIGHT where SCODE in ('{0}','{1}')",V.Local.sUser34,v.Local.sUser35,V.Local.sSQL)
+		F.ODBC.Connection!con.OpenLocalRecordsetRO("rstHigh",V.Local.sSQL)
+		F.Intrinsic.Control.DoUntil(V.ODBC.con!rstHigh.EOF,=,True)
+			F.Intrinsic.Control.If(V.Local.sHighlight.Trim,=,"")
+				V.Local.sHighlight.Set(V.ODBC.con!rstHigh.FieldValTrim!DESCRIPTION)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Local.sHighlight,", ",V.ODBC.con!rstHigh.FieldValTrim!DESCRIPTION,V.Local.sHighlight)
+			F.Intrinsic.Control.EndIf
+			F.ODBC.con!rstHigh.MoveNext
+		F.Intrinsic.Control.Loop
+		F.ODBC.con!rstHigh.Close
+	F.Intrinsic.Control.Else
+		V.Local.bExport.Set(False)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rstSel.Close
+	F.Intrinsic.String.Build("select * from GAB_4483_BATCH_NOTES where ORDER_NO = '{0}'",V.DataTable.dtMain(V.Local.iFor).ORDER_NO!FieldValTrim,V.Local.sSQL)
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rstSel",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.con!rstSel.EOF,=,False)
+		V.Local.sNotes.Set(V.ODBC.con!rstSel.FieldValTrim!NOTES)
+	F.Intrinsic.Control.Else
+		V.Local.sNotes.Set("")
+	F.Intrinsic.Control.EndIf
+	F.ODBC.con!rstSel.Close
+	F.Data.DataTable.SetValue(V.Local.sDT,V.Local.iFor,"MATL",V.Local.sMatl,"MATL_DESC",V.Local.sMatlDesc,"HIGH_SC",V.Local.sHighlight,"MOP",V.Local.sUser34,"LOP",V.Local.sUser35,"BATCH_NOTES",V.Local.sNotes,"FINISH",V.Local.sFinish,"HEIGHT",V.Local.fHeight,"WIDTH",V.Local.fWidth,"PART_CODE",V.Local.sPartCode,"B_CODE",V.Local.sBCode,"G_CODE",V.Local.sGCode,"N_CODE",V.Local.sNCode,"S_CODE",V.Local.sSCode)
+	F.Intrinsic.Control.If(V.Local.bExport,=,False)
+		F.Data.DataTable.DeleteRow(V.Local.sDT,V.Local.iFor)
+		F.Data.DataTable.AcceptChanges(V.Local.sDT)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iFor)
+
+F.Intrinsic.Control.If(V.DataTable.dtMain.RowCount--,<=,0)
+	F.Intrinsic.UI.Msgbox("There Are No Records to Batch","Cut Rite Integration")
+	F.Intrinsic.Control.CallSub(unload)
+F.Intrinsic.Control.EndIf
+
+'FILL WC_DESC WITH A DICTIONARY
+V.Local.sSQL.Set("select MACHINE, WC_NAME from V_WORKCENTERS")
+F.Data.Dictionary.CreateFromSQL("WC_NAME","con",V.Local.sSQL)
+V.Local.sSQL.Set("select WORK_GROUP, DESCR from V_WORKGROUP_HEAD")
+F.ODBC.Connection!con.OpenLocalRecordsetRO("rstSel",V.Local.sSQL)
+F.Intrinsic.Control.DoUntil(V.ODBC.con!rstSel.EOF,=,TRUE)
+	F.Data.Dictionary.AddItem("WC_NAME",V.ODBC.con!rstSel.FieldValTrim!WORK_GROUP,V.ODBC.con!rstSel.FieldValTrim!DESCR)
+	F.ODBC.con!rstSel.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.con!rstSel.Close
+F.Data.Dictionary.SetDefaultReturn("WC_NAME","")
+F.Data.DataTable.FillFromDictionary(V.Local.sDT,"WC_NAME","WORKCENTER","WC_DESC")
+F.Data.Dictionary.Close("WC_NAME")
+
+'FILL NAME_CUSTOMER WITH A DICTIONARY
+V.Local.sSQL.Set("select CUSTOMER, NAME_CUSTOMER from V_CUSTOMER_MASTER")
+F.Data.Dictionary.CreateFromSQL("NAME_CUSTOMER","con",V.Local.sSQL)
+F.Data.Dictionary.SetDefaultReturn("NAME_CUSTOMER","")
+F.Data.DataTable.FillFromDictionary(V.Local.sDT,"NAME_CUSTOMER","CUSTOMER","NAME_CUSTOMER")
+F.Data.Dictionary.Close("NAME_CUSTOMER")
+
+Program.Sub.LoadDtMain.End
+
+Program.Sub.Connect.Start
+F.ODBC.Connection!con.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+Program.Sub.Connect.End
+
+Program.Sub.Disconnect.Start
+F.ODBC.Connection!con.Close
+Program.Sub.Disconnect.End
+
+Program.Sub.LoadGvMain.Start
+V.Local.iIndex.Declare
+V.Local.sDefault.Declare
+V.Local.sGv.Declare
+V.Local.sProperty.Declare
+
+V.Local.sGv.Set("gvMain")
+
+F.Data.DataView.Create("dtMain","dvMain")
+
+Gui.f_Main.GsGcMain.AddGridviewFromDataview(V.Local.sGv,"dtMain","dvMain")
+
+Gui.f_Main.GsGcMain.SetGridviewProperty(V.Local.sGv,"AllowAddRows",False)
+Gui.f_Main.GsGcMain.SetGridviewProperty(V.Local.sGv,"AllowDeleteRows",False)
+Gui.f_Main.GsGcMain.SetGridviewProperty(V.Local.sGv,"Editable",True)
+Gui.f_Main.GsGcMain.SetGridviewProperty(V.Local.sGv,"MultiSelect",False)
+
+V.Local.sProperty.Set("AllowEdit")
+V.Local.sDefault.Set("False")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_CHECK",V.Local.sProperty,True)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_NO",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_LINE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"JOB",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SUFFIX",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SEQ",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"PRIORITY",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"DATE_DUE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL_DESC",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"QTY_ORDER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WC_DESC",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WORKCENTER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"HIGH_SC",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"CUSTOMER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"NAME_CUSTOMER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_NOTES",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"B_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"G_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"N_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"S_CODE",V.Local.sProperty,V.Local.sDefault)
+
+V.Local.sProperty.Set("ReadOnly")
+V.Local.sDefault.Set("True")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_CHECK",V.Local.sProperty,False)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_NO",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_LINE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"JOB",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SUFFIX",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SEQ",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"PRIORITY",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"DATE_DUE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL_DESC",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"QTY_ORDER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WC_DESC",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WORKCENTER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"HIGH_SC",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"CUSTOMER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"NAME_CUSTOMER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_NOTES",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"B_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"G_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"N_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"S_CODE",V.Local.sProperty,V.Local.sDefault)
+
+V.Local.sProperty.Set("HeaderFontBold")
+V.Local.sDefault.Set("True")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_CHECK",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_NO",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_LINE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"JOB",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SUFFIX",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SEQ",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"PRIORITY",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"DATE_DUE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL_DESC",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"QTY_ORDER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WC_DESC",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WORKCENTER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"HIGH_SC",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"CUSTOMER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"NAME_CUSTOMER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_NOTES",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"B_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"G_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"N_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"S_CODE",V.Local.sProperty,V.Local.sDefault)
+
+V.Local.sProperty.Set("HeaderBackColor")
+V.Local.sDefault.Set("MediumSeaGreen")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_CHECK",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_NO",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_LINE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"JOB",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SUFFIX",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SEQ",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"PRIORITY",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"DATE_DUE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL_DESC",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"QTY_ORDER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WC_DESC",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WORKCENTER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"HIGH_SC",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"CUSTOMER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"NAME_CUSTOMER",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_NOTES",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"B_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"G_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"N_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"S_CODE",V.Local.sProperty,V.Local.sDefault)
+
+V.Local.sProperty.Set("VisibleIndex")
+V.Local.iIndex.Set(0)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_CHECK",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_NO",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_LINE",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"JOB",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SUFFIX",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SEQ",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"PRIORITY",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"DATE_DUE",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL_DESC",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"QTY_ORDER",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WC_DESC",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WORKCENTER",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"HIGH_SC",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"CUSTOMER",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"NAME_CUSTOMER",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_NOTES",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"B_CODE",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"G_CODE",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"N_CODE",V.Local.sProperty,V.Local.iIndex)
+V.Local.iIndex.Set(V.Local.iIndex.++)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"S_CODE",V.Local.sProperty,V.Local.iIndex)
+
+V.Local.sProperty.Set("Caption")
+V.Local.sDefault.Set(" ")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_CHECK",V.Local.sProperty,"Select")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_NO",V.Local.sProperty,"Order")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_LINE",V.Local.sProperty,"Line")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"JOB",V.Local.sProperty,"Job")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SUFFIX",V.Local.sProperty,"Suffix")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SEQ",V.Local.sProperty,"Sequence")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"PRIORITY",V.Local.sProperty,"Priority")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"DATE_DUE",V.Local.sProperty,"Due Date")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL",V.Local.sProperty,"Material Code")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL_DESC",V.Local.sProperty,"Material Description")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"QTY_ORDER",V.Local.sProperty,"Quantity")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WC_DESC",V.Local.sProperty,"Machine Center")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WORKCENTER",V.Local.sProperty,"MC Code")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"HIGH_SC",V.Local.sProperty,"Highlight S Codes")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"CUSTOMER",V.Local.sProperty,"Customer")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"NAME_CUSTOMER",V.Local.sProperty,"Customer Name")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_NOTES",V.Local.sProperty,"Batch Notes")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"B_CODE",V.Local.sProperty,"B Code")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"G_CODE",V.Local.sProperty,"G Code")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"N_CODE",V.Local.sProperty,"N Code")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"S_CODE",V.Local.sProperty,"S Code")
+
+V.Local.sProperty.Set("MinWidth")
+V.Local.sDefault.Set("50")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_CHECK",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_NO",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"ORDER_LINE",V.Local.sProperty,30)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"JOB",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SUFFIX",V.Local.sProperty,40)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SEQ",V.Local.sProperty,65)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"PRIORITY",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"DATE_DUE",V.Local.sProperty,60)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL",V.Local.sProperty,130)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MATL_DESC",V.Local.sProperty,180)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"QTY_ORDER",V.Local.sProperty,60)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WC_DESC",V.Local.sProperty,100)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WORKCENTER",V.Local.sProperty,60)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"HIGH_SC",V.Local.sProperty,120)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"CUSTOMER",V.Local.sProperty,65)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"NAME_CUSTOMER",V.Local.sProperty,130)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_NOTES",V.Local.sProperty,200)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"B_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"G_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"N_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"S_CODE",V.Local.sProperty,V.Local.sDefault)
+
+'PLACE HOLDER FOR MAXWIDTH
+
+V.Local.sProperty.Set("CellHAlignment")
+V.Local.sDefault.Set("Center")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"BATCH_CHECK",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"PRIORITY",V.Local.sProperty,V.Local.sDefault)
+
+V.Local.sProperty.Set("CellForeColor")
+V.Local.sDefault.Set("Blue")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"JOB",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SUFFIX",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SEQ",V.Local.sProperty,V.Local.sDefault)
+
+V.Local.sProperty.Set("CellFontUnderline")
+V.Local.sDefault.Set("True")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"JOB",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SUFFIX",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"SEQ",V.Local.sProperty,V.Local.sDefault)
+
+V.Local.sProperty.Set("DisplayCustomDateTime")
+V.Local.sDefault.Set("d")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"DATE_DUE",V.Local.sProperty,V.Local.sDefault)
+
+V.Local.sProperty.Set("Visible")
+V.Local.sDefault.Set("False")
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"MOP",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"LOP",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"FINISH",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"HEIGHT",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"WIDTH",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"PART_CODE",V.Local.sProperty,V.Local.sDefault)
+gui.f_Main.GsGcMain.SetColumnProperty(V.Local.sGv,"PART",V.Local.sProperty,V.Local.sDefault)
+
+Gui.f_Main.GsGcMain.MainView(V.Local.sGv)
+
+F.Intrinsic.UI.CloseWaitDialog
+
+Gui.f_Main..Show
+Program.Sub.LoadGvMain.End
+
+Program.Sub.f_Main_UnLoad.Start
+Gui.f_Main..Visible(0)
+F.Intrinsic.Control.CallSub(unload)
+Program.Sub.f_Main_UnLoad.End
+
+Program.Sub.GsGcMain_RowCellClick.Start
+V.Local.sParams.Declare
+
+F.Intrinsic.Control.SelectCase(V.Args.Column)
+	'Open View Work Order if the Job, Suffix or Sequence is Clicked
+	F.Intrinsic.Control.Case("JOB")
+		F.Intrinsic.String.Build("{1}{0}{2}{0}{3}{0}{4}","!*!",7,V.DataTable.dtMain(V.Args.RowIndex).JOB!FieldValTrim,V.DataTable.dtMain(V.Args.RowIndex).SUFFIX!FieldValTrim,"A",V.Local.sParams)
+		F.Global.General.CallWrapperSync(450000,V.Local.sParams)
+	F.Intrinsic.Control.Case("SUFFIX")
+		F.Intrinsic.String.Build("{1}{0}{2}{0}{3}{0}{4}","!*!",7,V.DataTable.dtMain(V.Args.RowIndex).JOB!FieldValTrim,V.DataTable.dtMain(V.Args.RowIndex).SUFFIX!FieldValTrim,"A",V.Local.sParams)
+		F.Global.General.CallWrapperSync(450000,V.Local.sParams)
+	F.Intrinsic.Control.Case("SEQ")
+		F.Intrinsic.String.Build("{1}{0}{2}{0}{3}{0}{4}","!*!",7,V.DataTable.dtMain(V.Args.RowIndex).JOB!FieldValTrim,V.DataTable.dtMain(V.Args.RowIndex).SUFFIX!FieldValTrim,"A",V.Local.sParams)
+		F.Global.General.CallWrapperSync(450000,V.Local.sParams)
+
+F.Intrinsic.Control.EndSelect
+Program.Sub.GsGcMain_RowCellClick.End
+
+Program.Sub.GsGcMain_CellValueChanged.Start
+F.Intrinsic.Control.BlockEvents
+F.Intrinsic.Control.SelectCase(V.Args.Column)
+	F.Intrinsic.Control.Case("BATCH_CHECK")
+		F.Intrinsic.Control.CallSub(batch_checkverification,"Row",V.Args.RowIndex,"BoxValue",V.Args.Value)
+
+F.Intrinsic.Control.EndSelect
+F.Intrinsic.Control.UnBlockEvents
+Program.Sub.GsGcMain_CellValueChanged.End
+
+Program.Sub.Batch_CheckVerification.Start
+V.Local.bAllow.Declare
+V.Local.iFor.Declare
+V.Local.iRow.Declare
+V.Local.sValue.Declare
+V.Local.sWC.Declare
+
+V.Local.iRow.Set(V.Args.Row)
+V.Local.sValue.Set(V.Args.BoxValue)
+
+F.Intrinsic.Control.If(V.Local.sValue,=,True)
+	F.Intrinsic.Control.CallSub(wc_combo_verification,"WC",V.DataTable.dtMain(V.Local.iRow).WORKCENTER!FieldValTrim,"MOP",V.DataTable.dtMain(V.Local.iRow).MOP!FieldValTrim,"LOP",V.DataTable.dtMain(V.Local.iRow).LOP!FieldValTrim)
+	V.Local.bAllow.Set(V.Args.ReturnAllow)
+	F.Intrinsic.Control.If(V.Local.bAllow,=,True)
+		F.Intrinsic.Control.CallSub(mopandlopverification,"Row",V.Local.iRow,"sValue",V.Local.sValue)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.If(V.DataTable.dtMain(V.Local.iRow).MATL!FieldValTrim,<>,V.Global.sMatl)
+	F.Intrinsic.Control.AndIf(V.Global.iSelected,>,0)
+		'Don't Allow Batching of Different Materials
+		F.Data.DataTable.SetValue("dtMain",V.Local.iRow,"BATCH_CHECK",False)
+		gui.f_Main.GsGcMain.ResumeLayout
+	F.Intrinsic.Control.ElseIf(V.Local.bAllow,=,False)
+		F.Data.DataTable.SetValue("dtMain",V.Local.iRow,"BATCH_CHECK",False)
+		gui.f_Main.GsGcMain.ResumeLayout
+	F.Intrinsic.Control.Else
+		V.Global.sMatl.Set(V.DataTable.dtMain(V.Local.iRow).MATL!FieldValTrim)
+		V.Global.iSelected.Set(V.Global.iSelected.++)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	V.Global.iSelected.Set(V.Global.iSelected.--)
+	F.Intrinsic.Control.CallSub(mopandlopverification,"Row",V.Local.iRow,"sValue",V.Local.sValue)
+	F.Intrinsic.Control.If(V.Global.iSelected,=,0)
+	'Reset the buttons since nothing is selected
+		V.Global.sMatl.Set("")
+		gui.f_Main.cmd5Pc.Enabled(1)
+		gui.f_Main.cmdArtisan.Enabled(1)
+		gui.f_Main.cmdHeian.Enabled(1)
+		gui.f_Main.cmdHomag.Enabled(1)
+	F.Intrinsic.Control.Else
+		F.Data.DataTable.SetValue("dtMain",V.Local.iRow,"BATCH_CHECK",False)
+		'Reset the buttons based on current selections
+		'Set all to enabled
+		gui.f_Main.cmd5Pc.Enabled(1)
+		gui.f_Main.cmdArtisan.Enabled(1)
+		gui.f_Main.cmdHeian.Enabled(1)
+		gui.f_Main.cmdHomag.Enabled(1)
+		'Loop Through dtMain
+		F.Intrinsic.Control.For(V.Local.iFor,0,V.DataTable.dtMain.RowCount--,1)
+			'If checked, run the work center through wc_combo_verification
+			F.Intrinsic.Control.If(V.DataTable.dtMain(V.Local.iFor).BATCH_CHECK!FieldVal,=,True)
+				F.Intrinsic.Control.CallSub(wc_combo_verification,"WC",V.DataTable.dtMain(V.Local.iFor).WORKCENTER!FieldValTrim,"MOP",V.DataTable.dtMain(V.Local.iFor).MOP!FieldValTrim,"LOP",V.DataTable.dtMain(V.Local.iFor).LOP!FieldValTrim)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Next(V.Local.iFor)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+Program.Sub.Batch_CheckVerification.End
+
+Program.Sub.LoadOptions.Start
+V.Local.bExists.Declare
+V.Local.iFor.Declare
+V.Local.sArray.Declare
+V.Local.sFile.Declare
+V.Local.sSQL.Declare
+V.Local.sSplit.Declare
+
+V.Local.sSQL.Set("select WORKCENTER from V_WORKGROUP_LINE where WORKGROUP = '*5PC'")
+F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Global.s5PC)
+
+V.Local.sSQL.Set("select WORKCENTER from V_WORKGROUP_LINE where WORKGROUP = '*NBR'")
+F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Global.sAny)
+
+V.Local.sSQL.Set("select WORKCENTER from V_WORKGROUP_LINE where WORKGROUP = '*ART'")
+F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Global.sArt)
+
+V.Local.sSQL.Set("select WORKCENTER from V_WORKGROUP_LINE where WORKGROUP = '*FAN'")
+F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Global.sHeian)
+
+V.Local.sSQL.Set("select WORKCENTER from V_WORKGROUP_LINE where WORKGROUP = '*WOO'")
+F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Global.sHomag)
+
+'LOAD DTCONFLICT
+F.Intrinsic.Control.If(V.DataTable.dtConflict.Exists,=,True)
+	F.Data.DataTable.DeleteRow("dtConflict")
+	F.Data.DataTable.Close("dtConflict")
+F.Intrinsic.Control.EndIf
+V.Local.sSQL.Set("select * from GAB_4594_CONFLICTS")
+F.Data.DataTable.CreateFromSQL("dtConflict","con",V.Local.sSQL,True)
+
+'CREATE DTSELECTED
+F.Intrinsic.Control.If(V.DataTable.dtSelection.Exists,=,True)
+	F.Data.DataTable.DeleteRow("dtSelection")
+	F.Data.DataTable.Close("dtSelection")
+F.Intrinsic.Control.EndIf
+F.Data.DataTable.Create("dtSelection",True)
+F.Data.DataTable.AddColumn("dtSelection","JOB","String")
+F.Data.DataTable.AddColumn("dtSelection","SUFFIX","String")
+F.Data.DataTable.AddColumn("dtSelection","CONFLICT","String")
+
+'LOAD CONFIG FILE TO DTCONFIG
+F.Intrinsic.Control.If(V.DataTable.dtConfig.Exists,=,True)
+	F.Data.DataTable.DeleteRow("dtConfig")
+	F.Data.DataTable.Close("dtConfig")
+F.Intrinsic.Control.EndIf
+F.Intrinsic.String.Concat(V.Caller.FilesDir,"\GAB_4594.cfg",V.Local.sFile)
+F.Intrinsic.File.Exists(V.Local.sFile,V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists,=,False)
+	F.Intrinsic.UI.Msgbox("Configuration file is missing")
+	F.Intrinsic.Control.CallSub(unload)
+F.Intrinsic.Control.EndIf
+F.Data.DataTable.Create("dtConfig",True)
+F.Data.DataTable.AddColumn("dtConfig","WC","String")
+F.Data.DataTable.AddColumn("dtConfig","IO","String")
+F.Data.DataTable.AddColumn("dtConfig","Type","String")
+F.Data.DataTable.AddColumn("dtConfig","Folder","String")
+F.Intrinsic.File.File2String(V.Local.sFile,V.Local.sArray)
+F.Intrinsic.String.Split(V.Local.sArray,V.Ambient.NewLine,V.Local.sArray)
+F.Intrinsic.Control.For(V.Local.iFor,0,V.Local.sArray.UBound,1)
+	F.Intrinsic.Control.If(V.Local.sArray(V.Local.iFor).Left2,=,"//")
+	F.Intrinsic.Control.ElseIf(V.Local.sArray(V.Local.iFor).Trim,=,"")
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Split(V.Local.sArray(V.Local.iFor),"|",V.Local.sSplit)
+		F.Data.DataTable.AddRow("dtConfig","WC",V.Local.sSplit(0),"IO",V.Local.sSplit(1),"Type",V.Local.sSplit(2),"Folder",V.Local.sSplit(3))
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iFor)
+
+Program.Sub.LoadOptions.End
+
+Program.Sub.WC_Combo_Verification.Start
+V.Local.b5Pc.Declare
+V.Local.bAllow.Declare
+V.Local.bAny.Declare
+V.Local.bArtisan.Declare
+V.Local.bFan.Declare
+V.Local.bNbr.Declare
+V.Local.bWoo.Declare
+V.Local.sMember.Declare
+V.Local.sWC.Declare
+
+V.Local.sWC.Set(V.Args.WC)
+
+F.Intrinsic.Control.SelectCase(V.Local.sWC)
+	'Allow or not based on a work group
+	F.Intrinsic.Control.Case("*NBR")
+		F.Intrinsic.Control.If(V.Screen.f_Main!cmdHeian.Enabled,=,False)
+		F.Intrinsic.Control.AndIf(V.Screen.f_Main!cmdHomag.Enabled,=,False)
+			V.Local.bAllow.Set(False)
+		F.Intrinsic.Control.Else
+			V.Local.bAllow.Set(True)
+			gui.f_Main.cmd5Pc.Enabled(False)
+			gui.f_Main.cmdArtisan.Enabled(False)
+		F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.Case("*WOO")
+		F.Intrinsic.Control.If(V.Screen.f_Main!cmdHomag.Enabled,=,False)
+			V.Local.bAllow.Set(False)
+		F.Intrinsic.Control.Else
+			V.Local.bAllow.Set(True)
+			gui.f_Main.cmd5Pc.Enabled(False)
+			gui.f_Main.cmdArtisan.Enabled(False)
+			gui.f_Main.cmdHeian.Enabled(False)
+		F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.Case("*FAN")
+		F.Intrinsic.Control.If(V.Screen.f_Main!cmdHeian.Enabled,=,False)
+			V.Local.bAllow.Set(False)
+		F.Intrinsic.Control.Else
+			V.Local.bAllow.Set(True)
+			gui.f_Main.cmd5Pc.Enabled(False)
+			gui.f_Main.cmdArtisan.Enabled(False)
+			gui.f_Main.cmdHomag.Enabled(False)
+		F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.Case("*5PC")
+		F.Intrinsic.Control.If(V.Screen.f_Main!cmd5Pc.Enabled,=,False)
+			V.Local.bAllow.Set(False)
+		F.Intrinsic.Control.Else
+			V.Local.bAllow.Set(True)
+			gui.f_Main.cmdArtisan.Enabled(False)
+			gui.f_Main.cmdHeian.Enabled(False)
+			gui.f_Main.cmdHomag.Enabled(False)
+		F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.Case("*ART")
+		F.Intrinsic.Control.If(V.Screen.f_Main!cmdArtisan.Enabled,=,False)
+			V.Local.bAllow.Set(False)
+		F.Intrinsic.Control.Else
+			V.Local.bAllow.Set(True)
+			gui.f_Main.cmd5Pc.Enabled(False)
+			gui.f_Main.cmdHeian.Enabled(False)
+			gui.f_Main.cmdHomag.Enabled(False)
+		F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.CaseElse
+	'Allow or not based on work center
+		F.Intrinsic.String.IsInString(V.Global.s5PC,V.Local.sWC,False,V.Local.b5Pc)
+		F.Intrinsic.String.IsInString(V.Global.sArt,V.Local.sWC,False,V.Local.bArtisan)
+		F.Intrinsic.String.IsInString(V.Global.sHeian,V.Local.sWC,False,V.Local.bFan)
+		F.Intrinsic.String.IsInString(V.Global.sHomag,V.Local.sWC,False,V.Local.bWoo)
+		F.Intrinsic.String.IsInString(V.Global.sAny,V.Local.sWC,False,V.Local.bAny)
+
+		F.Intrinsic.Control.If(V.Local.b5Pc,=,True)
+			V.Local.sMember.Set("*5PC")
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.If(V.Local.bArtisan,=,True)
+			V.Local.sMember.Set("*ART")
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.If(V.Local.bFan,=,True)
+			V.Local.sMember.Set("*FAN")
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.If(V.Local.bWoo,=,True)
+			V.Local.sMember.Set("*WOO")
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.If(V.Local.bAny,=,True)
+			'work center selected with both enabled
+			F.Intrinsic.Control.If(V.Screen.f_Main!cmdHeian.Enabled,=,True)
+			F.Intrinsic.Control.AndIf(V.Screen.f_Main!cmdHomag.Enabled,=,True)
+				F.Intrinsic.Control.If(V.Local.bFan,=,True)
+					V.Local.bAllow.Set(True)
+					gui.f_Main.cmdHomag.Enabled(False)
+					gui.f_Main.cmd5Pc.Enabled(False)
+					gui.f_Main.cmdArtisan.Enabled(False)
+				F.Intrinsic.Control.ElseIf(V.Local.bWoo,=,True)
+					V.Local.bAllow.Set(True)
+					gui.f_Main.cmdHeian.Enabled(False)
+					gui.f_Main.cmd5Pc.Enabled(False)
+					gui.f_Main.cmdArtisan.Enabled(False)
+				F.Intrinsic.Control.Else
+					V.Local.bAllow.Set(False)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.Else
+			'Work center selected with one or the other selected
+				F.Intrinsic.Control.If(V.Local.bFan,=,True)
+					F.Intrinsic.Control.If(V.Screen.f_Main!cmdHeian.Enabled,=,True)
+						V.Local.bAllow.Set(True)
+						gui.f_Main.cmdHomag.Enabled(False)
+						gui.f_Main.cmd5Pc.Enabled(False)
+						gui.f_Main.cmdArtisan.Enabled(False)
+					F.Intrinsic.Control.Else
+						V.Local.bAllow.Set(False)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.ElseIf(V.Local.bWoo,=,True)
+					F.Intrinsic.Control.If(V.Screen.f_Main!cmdHomag.Enabled,=,True)
+						V.Local.bAllow.Set(True)
+						gui.f_Main.cmdHeian.Enabled(False)
+						gui.f_Main.cmd5Pc.Enabled(False)
+						gui.f_Main.cmdArtisan.Enabled(False)
+					F.Intrinsic.Control.Else
+						V.Local.bAllow.Set(False)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.EndSelect
+
+F.Intrinsic.Variable.AddRV("ReturnAllow",V.Local.bAllow)
+Program.Sub.WC_Combo_Verification.End
+
+Program.Sub.MOPandLOPVerification.Start
+V.Local.bAllow.Declare
+V.Local.iFor.Declare
+V.Local.iRow.Declare
+V.Local.sConflicts.Declare
+V.Local.sRet.Declare
+V.Local.sSelect.Declare
+V.Local.sValue.Declare
+
+V.Local.iRow.Set(V.Args.Row)
+V.Local.sValue.Set(V.Args.sValue)
+V.Local.bAllow.Set(True)
+
+F.Intrinsic.Control.If(V.Local.sValue,=,True)
+	F.Intrinsic.Control.If(V.DataTable.dtSelection.RowCount,=,0)
+		'Add Possible Conflicts
+		F.Intrinsic.String.Build("SCODE1 in ('{0}','{1}')",V.DataTable.dtMain(V.Local.iRow).MOP!FieldValTrim,V.DataTable.dtMain(V.Local.iRow).LOP!FieldValTrim,V.Local.sSelect)
+		F.Data.DataTable.Select("dtConflict",V.Local.sSelect,V.Local.sRet)
+		F.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"***NORETURN***")
+			F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sConflicts)
+			F.Intrinsic.Control.For(V.Local.iFor,0,V.Local.sConflicts.UBound,1)
+				F.Data.DataTable.AddRow("dtSelection","JOB",V.DataTable.dtMain(V.Local.iRow).JOB!FieldValTrim,"SUFFIX",V.DataTable.dtMain(V.Local.iRow).SUFFIX!FieldValTrim,"CONFLICT",V.DataTable.dtConflict(V.Local.sConflicts(V.Local.iFor)).SCODE2!FieldValTrim)
+			F.Intrinsic.Control.Next(V.Local.iFor)
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.String.Build("SCODE2 in ('{0}','{1}')",V.DataTable.dtMain(V.Local.iRow).MOP!FieldValTrim,V.DataTable.dtMain(V.Local.iRow).LOP!FieldValTrim,V.Local.sSelect)
+		F.Data.DataTable.Select("dtConflict",V.Local.sSelect,V.Local.sRet)
+		F.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"***NORETURN***")
+			F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sConflicts)
+			F.Intrinsic.Control.For(V.Local.iFor,0,V.Local.sConflicts.UBound,1)
+				F.Data.DataTable.AddRow("dtSelection","JOB",V.DataTable.dtMain(V.Local.iRow).JOB!FieldValTrim,"SUFFIX",V.DataTable.dtMain(V.Local.iRow).SUFFIX!FieldValTrim,"CONFLICT",V.DataTable.dtConflict(V.Local.sConflicts(V.Local.iFor)).SCODE1!FieldValTrim)
+			F.Intrinsic.Control.Next(V.Local.iFor)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		'Check for Conflicts
+		F.Intrinsic.String.Build("CONFLICT in ('{0}','{1}')",V.DataTable.dtMain(V.Local.iRow).MOP!FieldValTrim,V.DataTable.dtMain(V.Local.iRow).LOP!FieldValTrim,V.Local.sSelect)
+		F.Data.DataTable.Select("dtSelection",V.Local.sSelect,V.Local.sRet)
+		F.Intrinsic.Control.If(V.Local.sRet.Trim,=,"***NORETURN***")
+			'Add Possible Conflicts if no conflicts exist
+			F.Intrinsic.String.Build("SCODE1 in ('{0}','{1}')",V.DataTable.dtMain(V.Local.iRow).MOP!FieldValTrim,V.DataTable.dtMain(V.Local.iRow).LOP!FieldValTrim,V.Local.sSelect)
+			F.Data.DataTable.Select("dtConflict",V.Local.sSelect,V.Local.sRet)
+			F.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"***NORETURN***")
+				F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sConflicts)
+				F.Intrinsic.Control.For(V.Local.iFor,0,V.Local.sConflicts.UBound,1)
+					F.Data.DataTable.AddRow("dtSelection","JOB",V.DataTable.dtMain(V.Local.iRow).JOB!FieldValTrim,"SUFFIX",V.DataTable.dtMain(V.Local.iRow).SUFFIX!FieldValTrim,"CONFLICT",V.DataTable.dtConflict(V.Local.sConflicts(V.Local.iFor)).SCODE2!FieldValTrim)
+				F.Intrinsic.Control.Next(V.Local.iFor)
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.String.Build("SCODE2 in ('{0}','{1}')",V.DataTable.dtMain(V.Local.iRow).MOP!FieldValTrim,V.DataTable.dtMain(V.Local.iRow).LOP!FieldValTrim,V.Local.sSelect)
+			F.Data.DataTable.Select("dtConflict",V.Local.sSelect,V.Local.sRet)
+			F.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"***NORETURN***")
+				F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sConflicts)
+				F.Intrinsic.Control.For(V.Local.iFor,0,V.Local.sConflicts.UBound,1)
+					F.Data.DataTable.AddRow("dtSelection","JOB",V.DataTable.dtMain(V.Local.iRow).JOB!FieldValTrim,"SUFFIX",V.DataTable.dtMain(V.Local.iRow).SUFFIX!FieldValTrim,"CONFLICT",V.DataTable.dtConflict(V.Local.sConflicts(V.Local.iFor)).SCODE1!FieldValTrim)
+				F.Intrinsic.Control.Next(V.Local.iFor)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Else
+			V.Local.bAllow.Set(False)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	'The box is unchecked, remove the columns from the selection table
+	F.Intrinsic.String.Build("JOB = '{0}' and SUFFIX = '{1}'",V.DataTable.dtMain(V.Local.iRow).JOB!FieldValTrim,V.DataTable.dtMain(V.Local.iRow).SUFFIX!FieldValTrim,V.Local.sSelect)
+	F.Data.DataTable.Select("dtSelection",V.Local.sSelect,V.Local.sRet)
+	F.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"***NORETURN***")
+		F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sConflicts)
+		F.Intrinsic.Control.For(V.Local.iFor,V.Local.sConflicts.UBound,0,-1)
+			F.Data.DataTable.DeleteRow("dtSelection",V.Local.sConflicts(V.Local.iFor))
+		F.Intrinsic.Control.Next(V.Local.iFor)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Variable.AddRV("ReturnAllow",V.Local.bAllow)
+
+Program.Sub.MOPandLOPVerification.End
+
+Program.Sub.cmdHeian_Click.Start
+F.Intrinsic.Control.CallSub(countselectedrows)
+
+F.Intrinsic.Control.If(V.Args.Count,<=,0)
+	F.Intrinsic.UI.Msgbox("No Rows Are Selected")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'Get Batch Number
+F.Intrinsic.Control.CallSub(getbatchnumber)
+
+'Create dtCSV
+F.Intrinsic.Control.CallSub(createdtcsv)
+
+'Populate dtCSV and create the CSV File
+F.Intrinsic.Control.CallSub(populatedtcsv,"Machine","HEIAN")
+
+'Create Part Files
+F.Intrinsic.Control.CallSub(createpartfiles,"Machine","HEIAN")
+
+'Create the Flexible Schedule
+F.Intrinsic.Control.CallSub(createschedule,"Machine","HEIAN")
+
+'Save to the data table
+F.Intrinsic.Control.CallSub(savetodb)
+
+'Refresh the grid
+F.Intrinsic.UI.CloseWaitDialog
+F.Intrinsic.Control.CallSub(successmessage)
+F.Intrinsic.Control.CallSub(refresh)
+
+Program.Sub.cmdHeian_Click.End
+
+Program.Sub.cmdHomag_Click.Start
+F.Intrinsic.Control.CallSub(countselectedrows)
+
+F.Intrinsic.Control.If(V.Args.Count,<=,0)
+	F.Intrinsic.UI.Msgbox("No Rows Are Selected")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'Get Batch Number
+F.Intrinsic.Control.CallSub(getbatchnumber)
+
+'Create dtCSV
+F.Intrinsic.Control.CallSub(createdtcsv)
+
+'Populate dtCSV and create the CSV File
+F.Intrinsic.Control.CallSub(populatedtcsv,"Machine","HOMAG")
+
+'Create Part Files
+F.Intrinsic.Control.CallSub(createpartfiles,"Machine","HOMAG")
+
+'Create the Flexible Schedule
+F.Intrinsic.Control.CallSub(createschedule,"Machine","HOMAG")
+
+'Save to the data table
+F.Intrinsic.Control.CallSub(savetodb)
+
+'Refresh the grid
+F.Intrinsic.UI.CloseWaitDialog
+F.Intrinsic.Control.CallSub(successmessage)
+F.Intrinsic.Control.CallSub(refresh)
+
+Program.Sub.cmdHomag_Click.End
+
+Program.Sub.cmd5Pc_Click.Start
+F.Intrinsic.Control.CallSub(countselectedrows)
+
+F.Intrinsic.Control.If(V.Args.Count,<=,0)
+	F.Intrinsic.UI.Msgbox("No Rows Are Selected")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'Get Batch Number
+F.Intrinsic.Control.CallSub(getbatchnumber)
+
+'Create dtCSV
+F.Intrinsic.Control.CallSub(createdtcsv)
+
+'Populate dtCSV and create the CSV File
+F.Intrinsic.Control.CallSub(populatedtcsv,"Machine","5PC")
+
+'Create Part Files
+F.Intrinsic.Control.CallSub(createpartfiles,"Machine","5PC")
+
+'Create the Flexible Schedule
+F.Intrinsic.Control.CallSub(createschedule,"Machine","5PC")
+
+'Save to the data table
+F.Intrinsic.Control.CallSub(savetodb)
+
+'Refresh the grid
+F.Intrinsic.UI.CloseWaitDialog
+F.Intrinsic.Control.CallSub(successmessage)
+F.Intrinsic.Control.CallSub(refresh)
+
+Program.Sub.cmd5Pc_Click.End
+
+Program.Sub.cmdArtisan_Click.Start
+V.Local.iFor.Declare
+
+F.Intrinsic.Control.CallSub(countselectedrows)
+
+F.Intrinsic.Control.If(V.Args.Count,<=,0)
+	F.Intrinsic.UI.Msgbox("No Rows Are Selected")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'Get Batch Number
+F.Intrinsic.Control.CallSub(getbatchnumber)
+
+'Create dtCSV
+F.Intrinsic.Control.CallSub(createdtcsv)
+
+'Populate dtCSV and create the CSV File
+F.Intrinsic.Control.CallSub(populatedtcsv,"Machine","ARTISAN")
+
+'Create Part Files
+F.Intrinsic.Control.CallSub(createpartfiles,"Machine","ARTISAN")
+
+'Create the Flexible Schedule
+F.Intrinsic.Control.CallSub(createschedule,"Machine","ARTISAN")
+
+'Save to the data table
+F.Intrinsic.Control.CallSub(savetodb)
+
+'Refresh the grid
+F.Intrinsic.UI.CloseWaitDialog
+F.Intrinsic.Control.CallSub(successmessage)
+F.Intrinsic.Control.CallSub(refresh)
+
+Program.Sub.cmdArtisan_Click.End
+
+Program.Sub.Unload.Start
+F.Intrinsic.Control.CallSub(disconnect)
+F.Intrinsic.Control.End
+
+Program.Sub.Unload.End
+
+Program.Sub.CountSelectedRows.Start
+V.Local.iCount.Declare
+
+F.Data.DataTable.Compute("dtMain","COUNT(BATCH_CHECK)","BATCH_CHECK = True",V.Local.iCount)
+
+F.Intrinsic.Variable.AddRV("Count",V.Local.iCount)
+
+Program.Sub.CountSelectedRows.End
+
+Program.Sub.GetBatchNumber.Start
+V.Local.fSchedule.Declare
+V.Local.sScheduleLeft.Declare
+V.Local.sScheduleRight.Declare
+V.Local.sSQL.Declare
+
+gui.f_Main..Visible(0)
+
+F.Intrinsic.UI.InvokeWaitDialog("Getting Batch Number","Cut Rite Integration")
+
+V.Local.sSQL.Set("select F_NUMERIC from OP_HEADER where ID = '400817' and SEQUENCE = '0000'")
+
+'Get the last schedule number from company options and add 1
+F.ODBC.Connection!con.OpenLocalRecordsetRW("rstSel",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.con!rstSel.EOF,=,False)
+	V.Local.fSchedule.Set(V.ODBC.con!rstSel.FieldValFloat!F_NUMERIC)
+	V.Local.fSchedule.Set(V.Local.fSchedule.++)
+	F.ODBC.con!rstSel.Set!F_NUMERIC(V.Local.fSchedule)
+	F.ODBC.con!rstSel.Update
+	F.Intrinsic.String.ConvertToString(V.Local.fSchedule,V.Global.sSchedule)
+	F.Intrinsic.String.LPad(V.Global.sSchedule,"0",6,V.Global.sSchedule)
+	F.Intrinsic.String.Left(V.Global.sSchedule,3,V.Local.sScheduleLeft)
+	F.Intrinsic.String.Right(V.Global.sSchedule,3,V.Local.sScheduleRight)
+	F.Intrinsic.String.Build("update WEB_OPTIONS set BOOKING_DAYS = '{0}', SHIPPED_DAYS = '{1}' where SYS = 'SCH' and SUB_SYS = 'OPT'",V.Local.sScheduleLeft,V.Local.sScheduleRight,V.Local.sSQL)
+	F.ODBC.Connection!con.Execute(V.Local.sSQL)
+F.Intrinsic.Control.EndIf
+F.ODBC.con!rstSel.Close
+
+Program.Sub.GetBatchNumber.End
+
+Program.Sub.CreateDtCSV.Start
+'Make sure that the table isn't resident in memory
+F.Intrinsic.Control.If(V.DataTable.dtCSV.Exists,=,True)
+	F.Data.DataView.Close("dvCSV")
+	F.Data.DataTable.DeleteRow("dtCSV")
+	F.Data.DataTable.Close("dtCSV")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.UI.ChangeWaitStatus("Building CSV File")
+
+F.Data.DataTable.Create("dtCSV",True)
+F.Data.DataTable.AddColumn("dtCSV","Material","String")
+F.Data.DataTable.AddColumn("dtCSV","Door Width","Float")
+F.Data.DataTable.AddColumn("dtCSV","Door Height","Float")
+F.Data.DataTable.AddColumn("dtCSV","Quantity","Long")
+F.Data.DataTable.AddColumn("dtCSV","Wood Grain","Long")
+F.Data.DataTable.AddColumn("dtCSV","Outside Passes","String")
+F.Data.DataTable.AddColumn("dtCSV","Style","String")
+F.Data.DataTable.AddColumn("dtCSV","Profile Description","String")
+F.Data.DataTable.AddColumn("dtCSV","Global Settings","String")
+F.Data.DataTable.AddColumn("dtCSV","Horizontal Mullion Offset","String")
+F.Data.DataTable.AddColumn("dtCSV","Straight Side","String")
+F.Data.DataTable.AddColumn("dtCSV","T B S Edge","String")
+F.Data.DataTable.AddColumn("dtCSV","Straight Side Edge","String")
+F.Data.DataTable.AddColumn("dtCSV","Flute Count","String")
+F.Data.DataTable.AddColumn("dtCSV","Channel Passes","String")
+F.Data.DataTable.AddColumn("dtCSV","Pocket Description","String")
+F.Data.DataTable.AddColumn("dtCSV","Channel Spacing","String")
+F.Data.DataTable.AddColumn("dtCSV","Rail Offset","String")
+F.Data.DataTable.AddColumn("dtCSV","Style Offset","String")
+F.Data.DataTable.AddColumn("dtCSV","VChannel Passes","String")
+F.Data.DataTable.AddColumn("dtCSV","BottomHoriz MullionOffset","String")
+F.Data.DataTable.AddColumn("dtCSV","Left Opers","String")
+F.Data.DataTable.AddColumn("dtCSV","Right Opers","String")
+F.Data.DataTable.AddColumn("dtCSV","Side","String")
+F.Data.DataTable.AddColumn("dtCSV","Top Bottom Opers","String")
+F.Data.DataTable.AddColumn("dtCSV","Rough Outside Passes","String")
+F.Data.DataTable.AddColumn("dtCSV","Top Opers","String")
+F.Data.DataTable.AddColumn("dtCSV","Bottom Opers","String")
+F.Data.DataTable.AddColumn("dtCSV","Chord Height","String")
+F.Data.DataTable.AddColumn("dtCSV","ItemNum1","String")
+F.Data.DataTable.AddColumn("dtCSV","BatchNum","String")
+F.Data.DataTable.AddColumn("dtCSV","Answer Table","String")
+
+F.Data.DataView.Create("dtCSV","dvCSV")
+
+Program.Sub.CreateDtCSV.End
+
+Program.Sub.PopulatedtCSV.Start
+V.Local.fDoorArea.Declare
+V.Local.fDoorHeight.Declare
+V.Local.fDoorWidth.Declare
+V.Local.fThickness.Declare
+V.Local.iFor.Declare
+V.Local.iLength.Declare
+V.Local.iQuantity.Declare
+V.Local.iSuffix.Declare
+V.Local.sAnswerTable.Declare
+V.Local.sBatchNum.Declare
+V.Local.sBottomOpers.Declare
+V.Local.sBottomHorizMullionOffset.Declare
+V.Local.sChannelPasses.Declare
+V.Local.sChannelSpacing.Declare
+V.Local.sChordHeight.Declare
+V.Local.sCSV.Declare
+V.Local.sData.Declare
+V.Local.sFields.Declare
+V.Local.sFile.Declare
+V.Local.sFluteCount.Declare
+V.Local.sGlobalSettings.Declare
+V.Local.sHorizontalMullionOffset.Declare
+V.Local.sItemNum1.Declare
+V.Local.sLeftOpers.Declare
+V.Local.sMaterial.Declare
+V.Local.sOutsidePasses.Declare
+V.Local.sPocketDescription.Declare
+V.Local.sPrefix.Declare
+V.Local.sProfileDescription.Declare
+V.Local.sRailOffset.Declare
+V.Local.sRightOpers.Declare
+V.Local.sRoughOutsidePasses.Declare
+V.Local.sRow.Declare
+V.Local.sSel.Declare
+V.Local.sSide.Declare
+V.Local.sSQL.Declare
+V.Local.sStraightSide.Declare
+V.Local.sStraightSideEdge.Declare
+V.Local.sStyle.Declare
+V.Local.sStyleOffset.Declare
+V.Local.sTBSEdge.Declare
+V.Local.sTopBottomOpers.Declare
+V.Local.sTopOpers.Declare
+V.Local.sVChannelPasses.Declare
+V.Local.sWoodgrain.Declare
+
+'Set the batch number
+V.Local.sBatchNum.Set(V.Global.sSchedule)
+
+'Set the item prefix
+V.Local.sSQL.Set("select * from OP_HEADER where ID = '400460' and SEQUENCE = '0001'")
+
+F.ODBC.Connection!con.OpenLocalRecordsetRO("rstSel",V.Local.sSQL)
+
+F.Intrinsic.Control.If(V.ODBC.con!rstSel.EOF,=,False)
+	V.Local.sPrefix.Set(V.ODBC.con!rstSel.FieldValTrim!TEXT1)
+	F.Intrinsic.String.Len(V.Local.sPrefix,V.Local.iLength)
+F.Intrinsic.Control.EndIf
+F.ODBC.con!rstSel.Close
+
+'Loop Through dtMain, add values to dtCSV for lines with a BATCH_CHECK = True
+F.Intrinsic.Control.For(V.Local.iFor,0,V.DataTable.dtMain.RowCount--,1)
+	F.Intrinsic.UI.ChangeWaitStatus("Building CSV File",V.Local.iFor,0,V.DataTable.dtMain.RowCount--)
+	F.Intrinsic.Control.If(V.DataTable.dtMain(V.Local.iFor).BATCH_CHECK!FieldVal,=,True)
+
+		'Set Material equal to the material in dtMain
+		V.Local.sMaterial.Set(V.DataTable.dtMain(V.Local.iFor).MATL!FieldValTrim)
+
+		'Get thickness from the inventory master for the finish code and store in fThickness
+		F.Intrinsic.String.Build("select * from V_INVENTORY_MST3 where PART = '{0}'",V.DataTable.dtMain(V.Local.iFor).FINISH!FieldValTrim,V.Local.sSQL)
+		F.ODBC.Connection!con.OpenLocalRecordsetRO("rstSel",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.con!rstSel.EOF,=,False)
+			V.Local.fThickness.Set(V.ODBC.con!rstSel.FieldValFloat!THICKNESS)
+		F.Intrinsic.Control.Else
+			V.Local.fThickness.Set(0)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstSel.Close
+		'Set door width equal to the value in dtMain less thickness
+		F.Intrinsic.Math.Sub(V.DataTable.dtMain(V.Local.iFor).WIDTH!FieldValFloat,V.Local.fThickness,V.Local.fDoorWidth)
+
+		'Set door height equal to the value in dtMain less thickness
+		F.Intrinsic.Math.Sub(V.DataTable.dtMain(V.Local.iFor).HEIGHT!FieldValFloat,V.Local.fThickness,V.Local.fDoorHeight)
+
+		'Set Quantity equal to the value in dtMain
+		V.Local.iQuantity.Set(V.DataTable.dtMain(V.Local.iFor).QTY_ORDER!FieldVal)
+
+		'Set Woodgrain based on the value in GAB_4483_OE_LINES
+		F.Intrinsic.String.Build("select * from GAB_4483_OE_LINES where ORDER_NO = '{0}' and LINE = '{1}'",V.DataTable.dtMain(V.Local.iFor).ORDER_NO!FieldValTrim,V.DataTable.dtMain(V.Local.iFor).ORDER_LINE!FieldValTrim,V.Local.sSQL)
+		F.ODBC.Connection!con.OpenLocalRecordsetRO("rstSel",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.con!rstSel.EOF,=,False)
+			F.Intrinsic.Control.If(V.ODBC.con!rstSel.FieldVal!WGRAIN,=,True)
+				V.Local.sWoodgrain.Set(1)
+			F.Intrinsic.Control.Else
+				V.Local.sWoodgrain.Set(0)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Else
+			V.Local.sWoodgrain.Set(0)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstSel.Close	
+
+		'Set Style equal to USER36
+		'Set Profile Description equal to USER37
+		'Set Global Settings equal to USER38
+		'These INV Extra fields are based on the part code
+		'Outside Passes is developed from door area
+		'Door area is compared against USER31 (SmallSqInch) and USER32 (LargeSqlInch)
+		'If no values are in those fields use USER34 (Medium Outside Passes)
+		'If USER33 (Small Outside Passes) is blank then use USER34
+		'If USER35 (Large Outside Passes) is blank then use USER34
+		F.Intrinsic.String.Build("select * from INV_EXTRA where PART = '{0}'",V.DataTable.dtMain(V.Local.iFor).PART_CODE!FieldValTrim,V.Local.sSQL)
+		F.ODBC.Connection!con.OpenLocalRecordsetRO("rstSel",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.con!rstSel.EOF,=,False)
+			V.Local.sStyle.Set(V.ODBC.con!rstSel.FieldValTrim!USER36)
+			V.Local.sProfileDescription.Set(V.ODBC.con!rstSel.FieldValTrim!USER37)
+			V.Local.sGlobalSettings.Set(V.ODBC.con!rstSel.FieldValTrim!USER38)
+			'Set door area
+			F.Intrinsic.Math.Mult(V.Local.fDoorHeight,V.Local.fDoorWidth,V.Local.fDoorArea)
+			F.Intrinsic.Control.If(V.ODBC.con!rstSel.FieldValTrim!USER31,<>,"")
+			F.Intrinsic.Control.AndIf(V.ODBC.con!rstSel.FieldValTrim!USER32,<>,"")
+				'Compare door area
+				F.Intrinsic.Control.If(V.Local.fDoorArea,<=,V.ODBC.con!rstSel.FieldValFloat!USER31)
+					'Use Small Outside Passes if it isn't blank, otherwise use Medium Outside Passes
+					F.Intrinsic.Control.If(V.ODBC.con!rstSel.FieldValTrim!USER33,<>,"")
+						V.Local.sOutsidePasses.Set(V.ODBC.con!rstSel.FieldValTrim!USER33)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rstSel.FieldValTrim!USER34,<>,"")
+						V.Local.sOutsidePasses.Set(V.ODBC.con!rstSel.FieldValTrim!USER34)
+					F.Intrinsic.Control.Else
+						F.Intrinsic.UI.Msgbox("There is no value for Medium Outside Passes")
+						F.Intrinsic.Control.CallSub(f_main_unload)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.ElseIf(V.Local.fDoorArea,>=,V.ODBC.con!rstSel.FieldValFloat!USER32)
+					'Use Large Outside Passes if it isn't blank, otherwise use Medium Outside Passes
+					F.Intrinsic.Control.If(V.ODBC.con!rstSel.FieldValTrim!USER35,<>,"")
+						V.Local.sOutsidePasses.Set(V.ODBC.con!rstSel.FieldValTrim!USER35)
+					F.Intrinsic.Control.ElseIf(V.ODBC.con!rstSel.FieldValTrim!USER34,<>,"")
+						V.Local.sOutsidePasses.Set(V.ODBC.con!rstSel.FieldValTrim!USER34)
+					F.Intrinsic.Control.Else
+						F.Intrinsic.UI.Msgbox("There is no value for Medium Outside Passes")
+						F.Intrinsic.Control.CallSub(f_main_unload)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.Else
+					'Use Medium Outside Passes if it isn't blank
+					F.Intrinsic.Control.If(V.ODBC.con!rstSel.FieldValTrim!USER34,<>,"")
+						V.Local.sOutsidePasses.Set(V.ODBC.con!rstSel.FieldValTrim!USER34)
+					F.Intrinsic.Control.Else
+						F.Intrinsic.UI.Msgbox("There is no value for Medium Outside Passes")
+						F.Intrinsic.Control.CallSub(f_main_unload)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.Else
+				'Use Medium Outside Passes if it isn't blank
+				F.Intrinsic.Control.If(V.ODBC.con!rstSel.FieldValTrim!USER34,<>,"")
+					V.Local.sOutsidePasses.Set(V.ODBC.con!rstSel.FieldValTrim!USER34)
+				F.Intrinsic.Control.Else
+					F.Intrinsic.UI.Msgbox("There is no value for Medium Outside Passes")
+					F.Intrinsic.Control.CallSub(f_main_unload)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+			'USER39	Horizontal_Mullion_Offset
+			V.Local.sHorizontalMullionOffset.Set(V.ODBC.con!rstSel.FieldValTrim!USER39)
+			'USER40	Straight_Side
+			V.Local.sStraightSide.Set(V.ODBC.con!rstSel.FieldValTrim!USER40)
+			'USER41	T_B_S_Edge
+			V.Local.sTBSEdge.Set(V.ODBC.con!rstSel.FieldValTrim!USER41)
+			'USER42	Straight_Side_Edge
+			V.Local.sStraightSideEdge.Set(V.ODBC.con!rstSel.FieldValTrim!USER42)
+			'USER43	Flute_Count
+			V.Local.sFluteCount.Set(V.ODBC.con!rstSel.FieldValTrim!USER43)
+			'USER44	Channel_Passes
+			V.Local.sChannelPasses.Set(V.ODBC.con!rstSel.FieldValTrim!USER44)
+			'USER45	Pocket_Description
+			V.Local.sPocketDescription.Set(V.ODBC.con!rstSel.FieldValTrim!USER45)
+			'USER46	Channel_Spacing
+			V.Local.sChannelSpacing.Set(V.ODBC.con!rstSel.FieldValTrim!USER46)
+			'USER47	Rail_Offset
+			V.Local.sRailOffset.Set(V.ODBC.con!rstSel.FieldValTrim!USER47)
+			'USER48	Style_Offset
+			V.Local.sStyleOffset.Set(V.ODBC.con!rstSel.FieldValTrim!USER48)
+			'USER49	VChannel_Passes
+			V.Local.sVChannelPasses.Set(V.ODBC.con!rstSel.FieldValTrim!USER49)
+			'USER50	BottomHoriz_MullionOffset
+			V.Local.sBottomHorizMullionOffset.Set(V.ODBC.con!rstSel.FieldValTrim!USER50)
+			'USER51	Left_Opers
+			V.Local.sLeftOpers.Set(V.ODBC.con!rstSel.FieldValTrim!USER51)
+			'USER52	Right_Opers
+			V.Local.sRightOpers.Set(V.ODBC.con!rstSel.FieldValTrim!USER52)
+			'USER53	Top_Bottom_Opers
+			V.Local.sTopBottomOpers.Set(V.ODBC.con!rstSel.FieldValTrim!USER53)
+			'USER55 Side
+			V.Local.sSide.Set(V.ODBC.con!rstSel.FieldValTrim!USER55)
+			'USER56 Rough_Outside_Passes
+			V.Local.sRoughOutsidePasses.Set(V.ODBC.con!rstSel.FieldValTrim!USER56)
+			'USER57 Top_Opers
+			V.Local.sTopOpers.Set(V.ODBC.con!rstSel.FieldValTrim!USER57)
+			'USER58 Chord_Height
+			V.Local.sChordHeight.Set(V.ODBC.con!rstSel.FieldValTrim!USER58)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstSel.Close
+
+		'* items can be in GAB_4483_OE_LN_MACRO and only need to be included if they are modified
+		F.Intrinsic.String.Build("select * from GAB_4483_OE_LN_MACRO where ORDER_NO = '{0}' and RECORD_NO = '{1}'",V.DataTable.dtMain(V.Local.iFor).ORDER_NO!FieldValTrim,V.DataTable.dtMain(V.Local.iFor).ORDER_LINE!FieldValTrim,V.Local.sSQL)
+		F.ODBC.Connection!con.OpenLocalRecordsetRO("rstSel",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.con!rstSel.EOF,=,False)
+			F.Intrinsic.Control.DoUntil(V.ODBC.con!rstSel.EOF,=,True)
+				F.Intrinsic.Control.SelectCase(V.ODBC.con!rstSel.FieldValTrim!NAME)
+					'USER39	Horizontal_Mullion_Offset *
+					F.Intrinsic.Control.Case("Horizontal_Mullion_Offset")
+						V.Local.sHorizontalMullionOffset.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER40	Straight_Side *
+					F.Intrinsic.Control.Case("Straight_Side")
+						V.Local.sStraightSide.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER41	T_B_S_Edge *
+					F.Intrinsic.Control.Case("T_B_S_Edge")
+						V.Local.sTBSEdge.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER42	Straight_Side_Edge *
+					F.Intrinsic.Control.Case("Straight_Side_Edge")
+						V.Local.sStraightSideEdge.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER43	Flute_Count *
+					F.Intrinsic.Control.Case("Flute_Count")
+						V.Local.sFluteCount.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER44	Channel_Passes *
+					F.Intrinsic.Control.Case("Channel_Passes")
+						V.Local.sChannelPasses.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER45	Pocket_Description *
+					F.Intrinsic.Control.Case("Pocket_Description")
+						V.Local.sPocketDescription.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER46	Channel_Spacing *
+					F.Intrinsic.Control.Case("Channel_Spacing")
+						V.Local.sChannelSpacing.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER47	Rail_Offset *
+					F.Intrinsic.Control.Case("Rail_Offset")
+						V.Local.sRailOffset.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER48	Style_Offset *
+					F.Intrinsic.Control.Case("Style_Offset")
+						V.Local.sStyleOffset.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER49	VChannel_Passes *
+					F.Intrinsic.Control.Case("VChannel_Passes")
+						V.Local.sVChannelPasses.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER50	BottomHoriz_MullionOffset *
+					F.Intrinsic.Control.Case("BottomHoriz_MullionOffset")
+						V.Local.sBottomHorizMullionOffset.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER51	Left_Opers *
+					F.Intrinsic.Control.Case("Left_Opers")
+						V.Local.sLeftOpers.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER52	Right_Opers *
+					F.Intrinsic.Control.Case("Right_Opers")
+						V.Local.sRightOpers.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER53	Top_Bottom_Opers *
+					F.Intrinsic.Control.Case("Top_Bottom_Opers")
+						V.Local.sTopBottomOpers.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER55 Side *
+					F.Intrinsic.Control.Case("Side")
+						V.Local.sSide.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER56 Rough_Outside_Passes *
+					F.Intrinsic.Control.Case("Rough_Outside_Passes")
+						V.Local.sRoughOutsidePasses.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER57 Top_Opers *
+					F.Intrinsic.Control.Case("Top_Opers")
+						V.Local.sTopOpers.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+					'USER58 Chord_Height *
+					F.Intrinsic.Control.Case("Chord_Height")
+						V.Local.sChordHeight.Set(V.ODBC.con!rstSel.FieldValTrim!VALUE)
+				F.Intrinsic.Control.EndSelect
+				F.ODBC.con!rstSel.MoveNext
+			F.Intrinsic.Control.Loop
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstSel.Close
+
+		'Set ItemNum1 to Part Number less prefix
+		F.Intrinsic.String.Len(V.DataTable.dtMain(V.Local.iFor).PART!FieldValTrim,V.Local.iSuffix)
+		F.Intrinsic.Math.Sub(V.Local.iSuffix,V.Local.iLength,V.Local.iSuffix)
+		F.Intrinsic.String.Right(V.DataTable.dtMain(V.Local.iFor).PART!FieldValTrim,V.Local.iSuffix,V.Local.sItemNum1)
+
+		'Set Answer Table to "XX_" + ItemNum1
+		F.Intrinsic.String.Concat("XX_",V.Local.sItemNum1,V.Local.sAnswerTable)
+
+		'Add the row to the data table
+		F.Data.DataTable.AddRow("dtCSV","Material",V.Local.sMaterial,"Door Width",V.Local.fDoorWidth,"Door Height",V.Local.fDoorHeight,"Quantity",V.Local.iQuantity,"Wood Grain",V.Local.sWoodgrain,"Outside Passes",V.Local.sOutsidePasses,"Style",V.Local.sStyle,"Profile Description",V.Local.sProfileDescription,"Global Settings",V.Local.sGlobalSettings,"Horizontal Mullion Offset",V.Local.sHorizontalMullionOffset,"Straight Side",V.Local.sStraightSide,"T B S Edge",V.Local.sTBSEdge,"Straight Side Edge",V.Local.sStraightSideEdge,"Flute Count",V.Local.sFluteCount,"Channel Passes",V.Local.sChannelPasses,"Pocket Description",V.Local.sPocketDescription,"Channel Spacing",V.Local.sChannelSpacing,"Rail Offset",V.Local.sRailOffset,"Style Offset",V.Local.sStyleOffset,"VChannel Passes",V.Local.sVChannelPasses,"BottomHoriz MullionOffset",V.Local.sBottomHorizMullionOffset,"Left Opers",V.Local.sLeftOpers,"Right Opers",V.Local.sRightOpers,"Side",V.Local.sSide,"Top Bottom Opers",V.Local.sTopBottomOpers,"Rough Outside Passes",V.Local.sRoughOutsidePasses,"Top Opers",V.Local.sTopOpers,"Bottom Opers",V.Local.sBottomOpers,"Chord Height",V.Local.sChordHeight,"ItemNum1",V.Local.sItemNum1,"BatchNum",V.Local.sBatchNum,"Answer Table",V.Local.sAnswerTable)
+		V.Local.sHorizontalMullionOffset.Set("")
+		V.Local.sStraightSide.Set("")
+		V.Local.sTBSEdge.Set("")
+		V.Local.sStraightSideEdge.Set("")
+		V.Local.sFluteCount.Set("")
+		V.Local.sChannelPasses.Set("")
+		V.Local.sPocketDescription.Set("")
+		V.Local.sChannelSpacing.Set("")
+		V.Local.sRailOffset.Set("")
+		V.Local.sStyleOffset.Set("")
+		V.Local.sVChannelPasses.Set("")
+		V.Local.sBottomHorizMullionOffset.Set("")
+		V.Local.sLeftOpers.Set("")
+		V.Local.sRightOpers.Set("")
+		V.Local.sTopBottomOpers.Set("")
+		V.Local.sSide.Set("")
+		V.Local.sRoughOutsidePasses.Set("")
+		V.Local.sTopOpers.Set("")
+		V.Local.sChordHeight.Set("")
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iFor)
+
+'Build the CSV file name and path
+'dtConfig schema is WC, IO, Type, Folder
+F.Intrinsic.String.Build("WC = '{0}' and IO = 'OUTPUT' and TYPE = 'CSV'",V.Args.Machine,V.Local.sSel)
+F.Data.DataTable.Select("dtConfig",V.Local.sSel,V.Local.sRow)
+F.Intrinsic.Control.If(V.Local.sRow,<>,"***NORETURN***")
+	F.Intrinsic.String.Concat(V.DataTable.dtConfig(V.Local.sRow).Folder!FieldValTrim,V.Local.sBatchNum,".csv",V.Local.sFile)
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("No Configuration Exists For This Workcenter")
+	F.Intrinsic.Control.CallSub(f_main_unload)
+F.Intrinsic.Control.EndIf
+
+'Output the data table to the file
+V.Local.sFields.Set(V.DataTable.dtCSV.FieldNames)
+F.Data.DataView.ToString("dtCSV","dvCSV",V.Local.sFields,"*!*","|$|",V.Local.sData)
+F.Intrinsic.String.Concat(V.Local.sFields,"|$|",V.Local.sData,V.Local.sData)
+'F.Intrinsic.String.DelimitedStringToCSV(V.Local.sData,"|$|","*!*",V.Local.sCSV)
+F.Intrinsic.String.Replace(V.Local.sData,"|$|",V.Ambient.NewLine,V.Local.sData)
+F.Intrinsic.String.Replace(V.Local.sData,",","",V.Local.sData)
+F.Intrinsic.String.Replace(V.Local.sData,"*!*",",",V.Local.sCSV)
+F.Intrinsic.File.String2File(V.Local.sFile,V.Local.sCSV)
+
+Program.Sub.PopulatedtCSV.End
+
+Program.Sub.CreatePartFiles.Start
+V.Local.bExists.Declare
+V.Local.iFor.Declare
+V.Local.iLength.Declare
+V.Local.iPosition.Declare
+V.Local.iRight.Declare
+V.Local.sColumn.Declare
+V.Local.sData.Declare
+V.Local.sGFile.Declare
+V.Local.sInputFolder.Declare
+V.Local.sMessage.Declare
+V.Local.sNFile.Declare
+V.Local.sOutputFile.Declare
+V.Local.sOutputFolder.Declare
+V.Local.sRow.Declare
+V.Local.sSel.Declare
+V.Local.sSFile.Declare
+
+'Set the input folder
+F.Intrinsic.String.Build("WC = '{0}' and IO = 'INPUT' and TYPE = 'ANSWER'",V.Args.Machine,V.Local.sSel)
+F.Data.DataTable.Select("dtConfig",V.Local.sSel,V.Local.sRow)
+F.Intrinsic.Control.If(V.Local.sRow,<>,"***NORETURN***")
+	V.Local.sInputFolder.Set(V.DataTable.dtConfig(V.Local.sRow).Folder!FieldValTrim)
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("No Configuration Exists For This Workcenter")
+	F.Intrinsic.Control.CallSub(f_main_unload)
+F.Intrinsic.Control.EndIf
+
+'Set the output folder
+F.Intrinsic.String.Build("WC = '{0}' and IO = 'OUTPUT' and TYPE = 'PART'",V.Args.Machine,V.Local.sSel)
+F.Data.DataTable.Select("dtConfig",V.Local.sSel,V.Local.sRow)
+F.Intrinsic.Control.If(V.Local.sRow,<>,"***NORETURN***")
+	V.Local.sOutputFolder.Set(V.DataTable.dtConfig(V.Local.sRow).Folder!FieldValTrim)
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("No Configuration Exists For This Workcenter")
+	F.Intrinsic.Control.CallSub(f_main_unload)
+F.Intrinsic.Control.EndIf
+
+'Loop Through dtCSV
+F.Intrinsic.Control.For(V.Local.iFor,0,V.DataTable.dtCSV.RowCount--,1)
+	F.Intrinsic.UI.ChangeWaitStatus("Creating Answer Files",V.Local.iFor,0,V.DataTable.dtCSV.RowCount--)
+	'Read in the S file
+	V.Local.sColumn.Set("Outside Passes")
+	F.Intrinsic.String.Concat(V.Local.sInputFolder,V.DataTable.dtCSV(V.Local.iFor).[V.Local.sColumn]!FieldValTrim,".ans",V.Local.sSFile)
+	F.Intrinsic.File.Exists(V.Local.sSFile,V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists,=,True)
+		F.Intrinsic.File.File2String(V.Local.sSFile,V.Local.sData)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Build("S Answer File does not Exist{0}{1}",V.Ambient.NewLine,V.Local.sSFile,V.Local.sMessage)
+		F.Intrinsic.UI.Msgbox(V.Local.sMessage)
+		F.Intrinsic.Control.End
+
+	F.Intrinsic.Control.EndIf
+
+	'Read in the N file without the first line
+	V.Local.sColumn.Set("Profile Description")
+	F.Intrinsic.String.Concat(V.Local.sInputFolder,V.DataTable.dtCSV(V.Local.iFor).[V.Local.sColumn]!FieldValTrim,".ans",V.Local.sNFile)
+	F.Intrinsic.File.Exists(V.Local.sNFile,V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists,=,True)
+		F.Intrinsic.File.File2String(V.Local.sNFile,V.Local.sNFile)
+		F.Intrinsic.String.Instr(V.Local.sNFile,V.Ambient.NewLine,0,V.Local.iPosition)
+		F.Intrinsic.String.Len(V.Local.sNFile,V.Local.iLength)
+		F.Intrinsic.Math.Sub(V.Local.iLength,V.Local.iPosition,V.Local.iRight)
+		F.Intrinsic.String.Right(V.Local.sNFile,V.Local.iRight.--,V.Local.sNFile)
+		F.Intrinsic.String.Concat(V.Local.sData,V.Local.sNFile,V.Local.sData)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Build("N Answer File does not Exist{0}{1}",V.Ambient.NewLine,V.Local.sNFile,V.Local.sMessage)
+		F.Intrinsic.UI.Msgbox(V.Local.sMessage)
+		F.Intrinsic.Control.CallSub(f_main_unload)
+	F.Intrinsic.Control.EndIf
+
+	'Read in the G file without the first line
+	V.Local.sColumn.Set("Global Settings")
+	F.Intrinsic.String.Concat(V.Local.sInputFolder,V.DataTable.dtCSV(V.Local.iFor).[V.Local.sColumn]!FieldValTrim,".ans",V.Local.sGFile)
+	F.Intrinsic.File.Exists(V.Local.sGFile,V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists,=,True)
+		F.Intrinsic.File.File2String(V.Local.sGFile,V.Local.sGFile)
+		F.Intrinsic.String.Instr(V.Local.sGFile,V.Ambient.NewLine,0,V.Local.iPosition)
+		F.Intrinsic.String.Len(V.Local.sGFile,V.Local.iLength)
+		F.Intrinsic.Math.Sub(V.Local.iLength,V.Local.iPosition,V.Local.iRight)
+		F.Intrinsic.String.Right(V.Local.sGFile,V.Local.iRight.--,V.Local.sGFile)
+		F.Intrinsic.String.Concat(V.Local.sData,V.Local.sGFile,V.Local.sData)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Build("G Answer File does not Exist{0}{1}",V.Ambient.NewLine,V.Local.sGFile,V.Local.sMessage)
+		F.Intrinsic.UI.Msgbox(V.Local.sMessage)
+		F.Intrinsic.Control.CallSub(f_main_unload)
+	F.Intrinsic.Control.EndIf
+
+	'Build the Output File Name
+	V.Local.sColumn.Set("Answer Table")
+	F.Intrinsic.String.Concat(V.Local.sOutputFolder,V.DataTable.dtCSV(V.Local.iFor).[V.Local.sColumn]!FieldValTrim,".ans",V.Local.sOutputFile)
+	'String to File
+	F.Intrinsic.File.String2File(V.Local.sOutputFile,V.Local.sData)
+
+F.Intrinsic.Control.Next(V.Local.iFor)
+
+
+Program.Sub.CreatePartFiles.End
+
+Program.Sub.CreateSchedule.Start
+V.Local.bInstr.Declare
+V.Local.iFor.Declare
+V.Local.iSeq.Declare
+V.Local.sFiller.Declare
+V.Local.sFiller2.Declare
+V.Local.sIncrement.Declare
+V.Local.sJob.Declare
+V.Local.sLine.Declare
+V.Local.sMJob.Declare
+V.Local.sMSeq.Declare
+V.Local.sMSuffix.Declare
+V.Local.sPart.Declare
+V.Local.sSchedPath.Declare
+V.Local.sScheduleNumber.Declare
+V.Local.sSeq.Declare
+V.Local.sSplit.Declare
+V.Local.sSQL.Declare
+V.Local.sSuffix.Declare
+V.Local.sWorkCenter.Declare
+
+V.Local.sFiller.Set("000000999999")
+V.Local.sFiller2.Set("000000999999")
+F.Intrinsic.String.RPad(V.Global.sSchedule," ",6,V.Local.sScheduleNumber)
+V.Local.sIncrement.Set("000001")
+V.Local.sWorkCenter.Set("")
+
+'Set the schedule suffix
+F.Intrinsic.Control.SelectCase(V.Args.Machine)
+	F.Intrinsic.Control.Case("HEIAN")
+		V.Global.sScheduleSuffix.Set("HEI")
+	F.Intrinsic.Control.Case("HOMAG")
+		V.Global.sScheduleSuffix.Set("HOM")
+	F.Intrinsic.Control.Case("ARTISAN")
+		V.Global.sScheduleSuffix.Set("ART")
+	F.Intrinsic.Control.Case("5PC")
+		V.Global.sScheduleSuffix.Set("5PC")
+F.Intrinsic.Control.EndSelect
+
+'Find the work center to be used for scheduling
+'Find out if any work centers are in selected in the lines
+F.Intrinsic.Control.For(V.Local.iFor,0,V.DataTable.dtMain.RowCount--,1)
+	F.Intrinsic.Control.If(V.DataTable.dtMain(V.Local.iFor).BATCH_CHECK!FieldVal,=,TRUE)
+		F.Intrinsic.String.IsInString(V.DataTable.dtMain(V.Local.iFor).WORKCENTER!FieldValTrim,"*",True,V.Local.bInstr)
+		F.Intrinsic.Control.If(V.Local.bInstr,=,False)
+			V.Local.sWorkCenter.Set(V.DataTable.dtMain(V.Local.iFor).WORKCENTER!FieldValTrim)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iFor)
+
+'If none are selected look at the work groups
+'There is a global variable for each of the 4 work groups
+F.Intrinsic.Control.If(V.Local.sWorkCenter.Trim,=,"")
+	'Pick the correct global variable
+	F.Intrinsic.Control.SelectCase(V.Args.Machine)
+		F.Intrinsic.Control.Case("HEIAN")
+			V.Local.sWorkCenter.Set(V.Global.sHeian)
+		F.Intrinsic.Control.Case("HOMAG")
+			V.Local.sWorkCenter.Set(V.Global.sHomag)
+		F.Intrinsic.Control.Case("ARTISAN")
+			V.Local.sWorkCenter.Set(V.Global.sArt)
+		F.Intrinsic.Control.Case("5PC")
+			V.Local.sWorkCenter.Set(V.Global.s5PC)
+	F.Intrinsic.Control.EndSelect
+	'Split the workcenters
+	F.Intrinsic.String.Replace(V.Local.sWorkCenter,"*!*","",V.Local.sWorkCenter)
+	F.Intrinsic.String.Split(V.Local.sWorkCenter,"#$#",V.Local.sSplit)
+	'How many workcenters?
+	F.Intrinsic.Control.If(V.Local.sSplit.UBound,=,0)
+	'Only 1, set V.Local.sWorkCenter
+		V.Local.sWorkCenter.Set(V.Local.sSplit)
+	F.Intrinsic.Control.Else
+		V.Local.sWorkCenter.Set("")
+		V.Global.bSelected.Set(False)
+		'More than 1 prompt the user to find which workcenter to use
+		'Loop through the split and add the work centers to the drop down list
+		F.Intrinsic.Control.For(V.Local.iFor,0,V.Local.sSplit.UBound,1)
+			gui.f_WC.ddlWCSelection.AddItem(V.Local.sSplit(V.Local.iFor),V.Local.iFor)
+		F.Intrinsic.Control.Next(V.Local.iFor)
+		F.Intrinsic.UI.CloseWaitDialog
+		'Display the form
+		gui.f_WC..Show
+		F.Intrinsic.Control.DoUntil(V.Global.bSelected,=,True)
+		F.Intrinsic.Control.Loop
+		'Set the workcenter to the selection
+		V.Local.sWorkCenter.Set(V.Screen.f_WC!ddlWCSelection.Text)
+		F.Intrinsic.UI.InvokeWaitDialog("Creating Schedule","Cut Rite Integration")
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+'Loop through dtMain and add lines to the schedule if BATCH_CHECK = True
+F.Intrinsic.Control.For(V.Local.iFor,0,V.DataTable.dtMain.RowCount--,1)
+	F.Intrinsic.UI.ChangeWaitStatus("Creating Schedule",V.Local.iFor,0,V.DataTable.dtMain.RowCount--)
+	F.Intrinsic.Control.If(V.DataTable.dtMain(V.Local.iFor).BATCH_CHECK!FieldVal,=,True)
+		'Set the work center in JOB_OPERATIONS.PART
+		F.Intrinsic.String.Build("update JOB_OPERATIONS set PART = '{0}' where JOB = '{1}' and SUFFIX = '{2}' and SEQ = '{3}'",V.Local.sWorkCenter,V.DataTable.dtMAIN(V.Local.iFor).JOB!FieldValTrim,V.DataTable.dtMain(V.Local.iFor).SUFFIX!FieldValTrim,V.DataTable.dtMain(V.Local.iFor).SEQ!FieldValTrim,V.Local.sSQL)
+		F.ODBC.Connection!con.Execute(V.Local.sSQL)
+		'Set the work center in APSV3_UBDETAIL.SAR and APSV3_UBDETAIL.RST
+		V.Local.iSeq.Set(V.DataTable.dtMain(V.Local.iFor).SEQ!FieldValLong)
+		F.Intrinsic.String.Build("update APSV3_UBDETAIL set SAR = '{0}', RST = '{0}' where JOB = '{1}' and SFX = '{2}' and SEQ = '{3}'",V.Local.sWorkCenter,V.DataTable.dtMAIN(V.Local.iFor).JOB!FieldValTrim,V.DataTable.dtMain(V.Local.iFor).SUFFIX!FieldValTrim,V.Local.iSeq,V.Local.sSQL)
+		F.ODBC.Connection!con.Execute(V.Local.sSQL)
+		'pad all of the paramaters to fit into the file
+		F.Intrinsic.String.LPad(V.Local.sIncrement,"0",6,V.Local.sIncrement)
+		F.Intrinsic.String.RPad(V.DataTable.dtMain(V.Local.iFor).JOB!FieldValTrim," ",6,V.Local.sMJob)
+		F.Intrinsic.String.RPad(V.DataTable.dtMain(V.Local.iFor).SUFFIX!FieldValTrim," ",3,V.Local.sMSuffix)
+		'Get the previous material sequence
+		F.Intrinsic.String.Build("select * from V_JOB_OPERATIONS where JOB = '{0}' and SUFFIX = '{1}' and SEQ < '{2}' and LMO = 'M'",V.DataTable.dtMain(V.Local.iFor).JOB!FieldValTrim,V.DataTable.dtMain(V.Local.iFor).SUFFIX!FieldValTrim,V.DataTable.dtMain(V.Local.iFor).SEQ!FieldValTrim,V.Local.sSQL)
+		F.ODBC.Connection!con.OpenLocalRecordsetRO("rstSel",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.con!rstSel.EOF,=,False)
+			V.Local.sMSeq.Set(V.ODBC.con!rstSel.FieldValTrim!SEQ)
+		F.Intrinsic.Control.Else
+			V.Local.sMJob.Set("")
+			V.Local.sMSuffix.Set("")
+			V.Local.sMSeq.Set("000000")
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rstSel.Close
+		F.Intrinsic.String.RPad(V.Local.sMSeq," ",11,V.Local.sMSeq)
+		F.Intrinsic.String.RPad(V.DataTable.dtMain(V.Local.iFor).JOB!FieldValTrim," ",6,V.Local.sJob)
+		F.Intrinsic.String.RPad(V.DataTable.dtMain(V.Local.iFor).SUFFIX!FieldValTrim," ",3,V.Local.sSuffix)
+		F.Intrinsic.String.RPad(V.DataTable.dtMain(V.Local.iFor).SEQ!FieldValTrim," ",6,V.Local.sSeq)
+		F.Intrinsic.String.RPad(V.Local.sFiller," ",37,V.Local.sFiller)
+		F.Intrinsic.String.RPad(V.Local.sWorkCenter," ",4,V.Local.sWorkCenter)
+		F.Intrinsic.String.RPad(V.DataTable.dtMain(V.Local.iFor).PART!FieldValTrim," ",25,V.Local.sPart)
+		F.Intrinsic.String.RPad(V.Local.sFiller2," ",12,V.Local.sFiller2)
+		F.Intrinsic.String.Build("{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}{11}{12}{13}{14}",V.Local.sLine,V.Local.sScheduleNumber,V.Global.sScheduleSuffix,V.Local.sIncrement,V.Local.sMJob,V.Local.sMSuffix,V.Local.sMSeq,V.Local.sJob,V.Local.sSuffix,V.Local.sSeq,V.Local.sFiller,V.Local.sWorkCenter,V.Local.sPart,V.Local.sFiller2,V.Ambient.NewLine,V.Local.sLine)
+		V.Local.sIncrement.Set(V.Local.sIncrement.++)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iFor)
+F.Intrinsic.UI.ChangeWaitStatus("Uploading Schedule")
+F.Intrinsic.String.Build("{0}\SCHED.TXT",V.Caller.FilesDir,V.Local.sSchedPath)
+F.Intrinsic.File.String2File(V.Local.sSchedPath,V.Local.sLine)
+F.Global.General.CallWrapperSync(6000,"NS!*!50")
+
+Program.Sub.CreateSchedule.End
+
+Program.Sub.SaveToDb.Start
+F.Intrinsic.Control.If(V.DataTable.dtToGAB.Exists,=,True)
+	F.Data.DataTable.DeleteRow("dtToGAB")
+	F.Data.DataTable.Close("dtToGAB")
+F.Intrinsic.Control.EndIf
+
+F.Data.DataTable.Create("dtToGAB",True)
+F.Data.DataTable.Merge("dtMain","dtToGAB",True,1)
+F.Data.DataTable.RemoveColumn("dtToGAB","ORDER_NO")
+F.Data.DataTable.RemoveColumn("dtToGAB","ORDER_LINE")
+F.Data.DataTable.RemoveColumn("dtToGAB","PART")
+F.Data.DataTable.RemoveColumn("dtToGAB","PRIORITY")
+F.Data.DataTable.RemoveColumn("dtToGAB","DATE_DUE")
+F.Data.DataTable.RemoveColumn("dtToGAB","QTY_ORDER")
+F.Data.DataTable.RemoveColumn("dtToGAB","WORKCENTER")
+F.Data.DataTable.RemoveColumn("dtToGAB","CUSTOMER")
+F.Data.DataTable.RemoveColumn("dtToGAB","MATL")
+F.Data.DataTable.RemoveColumn("dtToGAB","MATL_DESC")
+F.Data.DataTable.RemoveColumn("dtToGAB","WC_DESC")
+F.Data.DataTable.RemoveColumn("dtToGAB","HIGH_SC")
+F.Data.DataTable.RemoveColumn("dtToGAB","MOP")
+F.Data.DataTable.RemoveColumn("dtToGAB","LOP")
+F.Data.DataTable.RemoveColumn("dtToGAB","NAME_CUSTOMER")
+F.Data.DataTable.RemoveColumn("dtToGAB","BATCH_NOTES")
+F.Data.DataTable.RemoveColumn("dtToGAB","FINISH")
+F.Data.DataTable.RemoveColumn("dtToGAB","HEIGHT")
+F.Data.DataTable.RemoveColumn("dtToGAB","WIDTH")
+F.Data.DataTable.RemoveColumn("dtToGAB","PART_CODE")
+F.Data.DataTable.RemoveColumn("dtToGAB","B_CODE")
+F.Data.DataTable.RemoveColumn("dtToGAB","G_CODE")
+F.Data.DataTable.RemoveColumn("dtToGAB","N_CODE")
+F.Data.DataTable.RemoveColumn("dtToGAB","S_CODE")
+
+F.Data.DataTable.SaveToDB("dtToGAB","con","GAB_4594_BATCH","JOB*!*SUFFIX*!*SEQ",256,"JOB@!@JOB*!*SUFFIX@!@SUFFIX*!*SEQ@!@SEQ*!*BATCH_CHECK@!@BATCHED")
+Program.Sub.SaveToDb.End
+
+Program.Sub.Refresh.Start
+F.Intrinsic.UI.InvokeWaitDialog("Loading Data","Cut Rite Integration")
+F.Intrinsic.Control.CallSub(loadoptions)
+F.Intrinsic.UI.ChangeWaitStatus("Loading Main Data Table")
+F.Intrinsic.Control.CallSub(loaddtmain)
+F.Intrinsic.UI.ChangeWaitStatus("Loading Grid View")
+F.Intrinsic.Control.CallSub(loadgvmain)
+Program.Sub.Refresh.End
+
+Program.Sub.cmdSetup_Click.Start
+V.Local.sGV.Declare
+V.Local.sProperty.Declare
+V.Local.sSQL.Declare
+
+F.Intrinsic.Control.If(V.DataTable.dtConflict.Exists,=,True)
+	F.Data.DataTable.DeleteRow("dtConflict")
+	F.Data.DataTable.Close("dtConflict")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.DataTable.dtHighlight.Exists,=,True)
+	F.Data.DataTable.DeleteRow("dtHighlight")
+	F.Data.DataTable.Close("dtHighlight")
+F.Intrinsic.Control.EndIf
+
+V.Local.sSQL.Set("select * from GAB_4594_CONFLICTS")
+F.Data.DataTable.CreateFromSQL("dtConflict","con",V.Local.sSQL,True)
+F.Data.DataView.Create("dtConflict","dvConflict")
+
+V.Local.sSQL.Set("select * from GAB_4594_HIGHLIGHT")
+F.Data.DataTable.CreateFromSQL("dtHighlight","con",V.Local.sSQL,True)
+F.Data.DataView.Create("dtHighlight","dvHighlight")
+
+gui.f_Setup.GsGcConflict.AddGridviewFromDataview("gvConflict","dtConflict","dvConflict")
+
+gui.f_Setup.GsGcConflict.SetGridviewProperty("gvConflict","ShowGroupPanel",False)
+gui.f_Setup.GsGcConflict.SetGridviewProperty("gvConflict","Editable",True)
+gui.f_Setup.GsGcConflict.SetGridviewProperty("gvConflict","ReadOnly",False)
+gui.f_Setup.GsGcConflict.SetGridviewProperty("gvConflict","MultiSelect",False)
+gui.f_Setup.GsGcConflict.SetGridviewProperty("gvConflict","AllowSort",True)
+gui.f_Setup.GsGcConflict.SetGridviewProperty("gvConflict","AllowFilter",False)
+gui.f_Setup.GsGcConflict.SetGridviewProperty("gvConflict","AllowAddRows",True)
+gui.f_Setup.GsGcConflict.SetGridviewProperty("gvConflict","AllowDeleteRows",True)
+
+V.Local.sGV.Set("gvConflict")
+
+V.Local.sProperty.Set("MinWidth")
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE1",V.Local.sProperty,100)
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE2",V.Local.sProperty,100)
+
+V.Local.sProperty.Set("MaxWidth")
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE1",V.Local.sProperty,100)
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE2",V.Local.sProperty,100)
+
+V.Local.sProperty.Set("ReadOnly")
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE1",V.Local.sProperty,FALSE)
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE2",V.Local.sProperty,FALSE)
+
+V.Local.sProperty.Set("AllowEdit")
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE1",V.Local.sProperty,TRUE)
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE2",V.Local.sProperty,TRUE)
+
+V.Local.sProperty.Set("Caption")
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE1",V.Local.sProperty,"SCODE 1")
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE2",V.Local.sProperty,"SCODE 2")
+
+V.Local.sProperty.Set("HeaderHAlignment")
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE1",V.Local.sProperty,"Center")
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE2",V.Local.sProperty,"Center")
+
+V.Local.sProperty.Set("HeaderFontBold")
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE1",V.Local.sProperty,TRUE)
+gui.f_Setup.GsGcConflict.SetColumnProperty(V.Local.sGV,"SCODE2",V.Local.sProperty,TRUE)
+
+gui.f_Setup.GsGcHighlight.AddGridviewFromDataview("gvHighlight","dtHighlight","dvHighlight")
+
+gui.f_Setup.GsGcHighlight.SetGridviewProperty("gvHighlight","ShowGroupPanel",False)
+gui.f_Setup.GsGcHighlight.SetGridviewProperty("gvHighlight","Editable",True)
+gui.f_Setup.GsGcHighlight.SetGridviewProperty("gvHighlight","ReadOnly",False)
+gui.f_Setup.GsGcHighlight.SetGridviewProperty("gvHighlight","MultiSelect",False)
+gui.f_Setup.GsGcHighlight.SetGridviewProperty("gvHighlight","AllowSort",True)
+gui.f_Setup.GsGcHighlight.SetGridviewProperty("gvHighlight","AllowFilter",False)
+gui.f_Setup.GsGcHighlight.SetGridviewProperty("gvHighlight","AllowAddRows",True)
+gui.f_Setup.GsGcHighlight.SetGridviewProperty("gvHighlight","AllowDeleteRows",True)
+
+V.Local.sGV.Set("gvHighlight")
+
+V.Local.sProperty.Set("MinWidth")
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"SCODE",V.Local.sProperty,100)
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"DESCRIPTION",V.Local.sProperty,200)
+
+V.Local.sProperty.Set("MaxWidth")
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"SCODE",V.Local.sProperty,100)
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"DESCRIPTION",V.Local.sProperty,200)
+
+V.Local.sProperty.Set("ReadOnly")
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"SCODE",V.Local.sProperty,FALSE)
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"DESCRIPTION",V.Local.sProperty,FALSE)
+
+V.Local.sProperty.Set("AllowEdit")
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"SCODE",V.Local.sProperty,TRUE)
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"DESCRIPTION",V.Local.sProperty,TRUE)
+
+V.Local.sProperty.Set("Caption")
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"SCODE",V.Local.sProperty,"SCODE")
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"DESCRIPTION",V.Local.sProperty,"Description")
+
+V.Local.sProperty.Set("HeaderHAlignment")
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"SCODE",V.Local.sProperty,"Center")
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"DESCRIPTION",V.Local.sProperty,"Center")
+
+V.Local.sProperty.Set("HeaderFontBold")
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"SCODE",V.Local.sProperty,TRUE)
+gui.f_Setup.GsGcHighlight.SetColumnProperty(V.Local.sGV,"DESCRIPTION",V.Local.sProperty,TRUE)
+
+gui.f_Setup.GsGcConflict.MainView("gvConflict")
+gui.f_Setup.GsGcHighlight.MainView("gvHighlight")
+
+gui.f_Setup.tabSetup.SetTab(0)
+
+gui.f_Setup..Show
+Program.Sub.cmdSetup_Click.End
+
+Program.Sub.f_Setup_UnLoad.Start
+gui.f_Setup..Visible(0)
+
+F.Data.DataTable.DeleteRow("dtConflict")
+F.Data.DataTable.Close("dtConflict")
+
+F.Data.DataTable.DeleteRow("dtHighlight")
+F.Data.DataTable.Close("dtHighlight")
+Program.Sub.f_Setup_UnLoad.End
+
+Program.Sub.cmdSave_Click.Start
+V.Local.iFor.Declare
+V.Local.sSQL.Declare
+
+F.Data.DataTable.AcceptChanges("dtConflict")
+
+F.ODBC.Connection!con.Execute("delete from GAB_4594_CONFLICTS")
+
+F.Intrinsic.Control.For(V.Local.iFor,0,V.DataTable.dtConflict.RowCount--,1)
+	F.Intrinsic.String.Build("insert into GAB_4594_CONFLICTS (SCODE1,SCODE2) VALUES ('{0}','{1}')",V.DataTable.dtConflict(V.Local.iFor).SCODE1!FieldValTrim,V.DataTable.dtConflict(V.Local.iFor).SCODE2!FieldValTrim,V.Local.sSQL)
+	F.ODBC.Connection!con.Execute(V.Local.sSQL)
+F.Intrinsic.Control.Next(V.Local.iFor)
+F.Data.DataTable.SaveToDB("dtHighlight","con","GAB_4594_HIGHLIGHT","SCODE",7)
+
+F.Intrinsic.Control.CallSub(f_setup_unload)
+
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.SuccessMessage.Start
+V.Local.sMessage.Declare
+
+F.Intrinsic.String.Build("Flexible Schedule {0}-{1} Has Been Created",V.Global.sSchedule,V.Global.sScheduleSuffix,V.Local.sMessage)
+F.Intrinsic.UI.Msgbox(V.Local.sMessage,"Cut Rite Integration")
+
+gui.f_Main.cmd5Pc.Enabled(1)
+gui.f_Main.cmdArtisan.Enabled(1)
+gui.f_Main.cmdHeian.Enabled(1)
+gui.f_Main.cmdHomag.Enabled(1)
+Program.Sub.SuccessMessage.End
+
+Program.Sub.f_WC_UnLoad.Start
+gui.f_WC..Visible(0)
+V.Global.bSelected.Set(True)
+Program.Sub.f_WC_UnLoad.End
+
+Program.Sub.cmdProcess_Click.Start
+F.Intrinsic.Control.If(V.Screen.f_WC!ddlWCSelection.Text,<>,"")
+	F.Intrinsic.Control.CallSub(f_wc_unload)
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("Please Make a Selection")
+F.Intrinsic.Control.EndIf
+Program.Sub.cmdProcess_Click.End
+
+Program.Sub.Comments.Start
+${$0$}$Cut Rite Integration$}$JWERTH$}$5/25/2017 2:13:06 PM$}$False
+Program.Sub.Comments.End
